@@ -7,6 +7,11 @@ using System.Threading.Tasks;
 using ApiReview.Shared;
 
 using Octokit;
+using Octokit.GraphQL;
+using Octokit.GraphQL.Model;
+using static Octokit.GraphQL.Variable;
+
+using Issue = Octokit.Issue;
 
 namespace ApiReview.Server.Services
 {
@@ -60,7 +65,7 @@ namespace ApiReview.Server.Services
 
         private async Task<IReadOnlyList<ApiReviewFeedback>> GetFeedbackAsync(OrgAndRepo[] repos, DateTimeOffset start, DateTimeOffset end)
         {
-            static bool IsApiIssue(Issue issue)
+            static bool IsApiIssue(FeedbackIssue issue)
             {
                 var isReadyForReview = issue.Labels.Any(l => l.Name == "api-ready-for-review");
                 var isApproved = issue.Labels.Any(l => l.Name == "api-approved");
@@ -90,62 +95,137 @@ namespace ApiReview.Server.Services
                 return (null, body);
             }
 
-            var github = await _clientFactory.CreateAsync();
+            static ApiReviewIssue CreateIssue(FeedbackIssue issue)
+            {
+                var result = new ApiReviewIssue
+                {
+                    Owner = issue.Owner,
+                    Repo = issue.Repo,
+                    Author = issue.Author,
+                    CreatedAt = issue.CreateAt,
+                    Labels = issue.Labels.ToArray(),
+                    //Milestone = issue.Milestone ?? "(None)",
+                    Title = GitHubIssueHelpers.FixTitle(issue.Title),
+                    Url = issue.Url,
+                    Id = issue.Number
+                };
+                return result;
+            }
+
+            var filter = new IssueFilters()
+            {
+                Assignee = "*",
+                Milestone = "*",
+                Since = start,
+            };
+            var query = new Query()
+                .Repository(Var("repo"), Var("owner"))
+                .Issues(filterBy: filter)
+                .AllPages()
+                .Select(i => new FeedbackIssue
+                {
+                    Owner = i.Repository.Owner.Login,
+                    Repo = i.Repository.Name,
+                    Number = i.Number,
+                    Title = i.Title,
+                    CreateAt = i.CreatedAt,
+                    Author = i.Author.Login,
+                    State = i.State,
+                    //Milestone = i.Milestone.Title,
+                    Url = i.Url,
+                    Labels = i.Labels(null, null, null, null, null)
+                              .AllPages()
+                              .Select(l => new ApiReviewLabel
+                              {
+                                  Name = l.Name,
+                                  BackgroundColor = l.Color
+                              }).ToList(),
+                    TimelineItems = i
+                        .TimelineItems(null, null, null, null, null, null, null)
+                        .AllPages()
+                        .Select(tl => tl == null ? null : tl.Switch<ApiTimelineItem>(when =>
+                        when.IssueComment(ic => new ApiTimelineCommented
+                        {
+                            Id = ic.Id.Value,
+                            Body = ic.Body,
+                            Url = ic.Url,
+                            Actor = ic.Author.Login,
+                            CreatedAt = ic.CreatedAt
+                        }).LabeledEvent(l => new ApiTimelineLabeled
+                        {
+                            LabelName = l.Label.Name,
+                            Actor = l.Actor.Login,
+                            CreatedAt = l.CreatedAt
+                        }).ReopenedEvent(c => new ApiTimelineReopened
+                        {
+                            Actor = c.Actor.Login,
+                            CreatedAt = c.CreatedAt
+                        }).ClosedEvent(c => new ApiTimelineClosed
+                        {
+                            Actor = c.Actor.Login,
+                            CreatedAt = c.CreatedAt
+                        }))).ToList()
+                }).Compile();
+
+            var connection = await _clientFactory.CreateGraphAsync();
+            var vars = new Dictionary<string, object>();
+
+            var issues = new List<FeedbackIssue>();
+
+            foreach (var ownerAndRepo in repos)
+            {
+                vars["owner"] = ownerAndRepo.OrgName;
+                vars["repo"] = ownerAndRepo.RepoName;
+                try
+                {
+                    var current = await connection.Run(query, vars);
+                    issues.AddRange(current);
+                }
+                catch (Exception ex)
+                {
+                    throw;
+                }
+            }
+
+            issues.ForEach(i => i.TimelineItems.RemoveAll(ti => ti == null));
+
             var results = new List<ApiReviewFeedback>();
 
-            foreach (var (owner, repo) in repos)
+            foreach (var issue in issues)
             {
-                var request = new RepositoryIssueRequest
+                if (!IsApiIssue(issue))
+                    continue;
+
+                var reviewOutcome = ApiReviewOutcome.Get(issue.TimelineItems, start, end);
+                if (reviewOutcome != null)
                 {
-                    Filter = IssueFilter.All,
-                    State = ItemStateFilter.All,
-                    Since = start
-                };
+                    var title = GitHubIssueHelpers.FixTitle(issue.Title);
+                    var decision = reviewOutcome.Decision;
+                    var feedbackDateTime = reviewOutcome.DecisionTime;
+                    var comments = issue.TimelineItems.OfType<ApiTimelineCommented>();
+                    var comment = comments.Where(c => start <= c.CreatedAt && c.CreatedAt <= end)
+                                          .Where(c => string.Equals(c.Actor, reviewOutcome.DecisionMaker, StringComparison.OrdinalIgnoreCase))
+                                          .Select(c => (Comment: c, TimeDifference: Math.Abs((c.CreatedAt - feedbackDateTime).TotalSeconds))).OrderBy(c => c.TimeDifference)
+                                          .Select(c => c.Comment)
+                                          .FirstOrDefault();
 
-                var issues = await github.Issue.GetAllForRepository(owner, repo, request);
+                    var feedbackId = comment?.Id;
+                    var feedbackUrl = comment?.Url ?? issue.Url;
+                    var (videoUrl, feedbackMarkdown) = ParseFeedback(comment?.Body);
 
-                foreach (var issue in issues)
-                {
-                    if (!IsApiIssue(issue))
-                        continue;
+                    var apiReviewIssue = CreateIssue(issue);
 
-                    var events = await github.Issue.Events.GetAllForIssue(owner, repo, issue.Number);
-                    var reviewOutcome = ApiReviewOutcome.Get(events, start, end);
-
-                    if (reviewOutcome != null)
+                    var feedback = new ApiReviewFeedback
                     {
-                        var title = GitHubIssueHelpers.FixTitle(issue.Title);
-                        var feedbackDateTime = reviewOutcome.DecisionTime;
-
-                        var decision = reviewOutcome.Decision;
-                        var comments = await github.Issue.Comment.GetAllForIssue(owner, repo, issue.Number);
-                        var comment = comments.Where(c => start <= c.CreatedAt && c.CreatedAt <= end)
-                                              .Where(c => string.Equals(c.User.Login, reviewOutcome.DecisionMaker, StringComparison.OrdinalIgnoreCase))                                              
-                                              .Select(c => (Comment: c, TimeDifference: Math.Abs((c.CreatedAt - feedbackDateTime).TotalSeconds)))
-                                              .OrderBy(c => c.TimeDifference)
-                                              .Select(c => c.Comment)
-                                              .FirstOrDefault();
-
-                        var feedbackId = comment?.Id.ToString();
-                        var feedbackAuthor = reviewOutcome.DecisionMaker;
-                        var feedbackUrl = comment?.HtmlUrl ?? issue.HtmlUrl;
-                        var (videoUrl, feedbackMarkdown) = ParseFeedback(comment?.Body);
-
-                        var apiReviewIssue = CreateIssue(owner, repo, issue);
-
-                        var feedback = new ApiReviewFeedback
-                        {
-                            Decision = decision,
-                            Issue = apiReviewIssue,
-                            FeedbackId = feedbackId,
-                            FeedbackAuthor = feedbackAuthor,
-                            FeedbackDateTime = feedbackDateTime,
-                            FeedbackUrl = feedbackUrl,
-                            FeedbackMarkdown = feedbackMarkdown,
-                            VideoUrl = videoUrl
-                        };
-                        results.Add(feedback);
-                    }
+                        Issue = apiReviewIssue,
+                        Decision = decision,
+                        FeedbackId = feedbackId,
+                        FeedbackDateTime = feedbackDateTime,
+                        FeedbackUrl = feedbackUrl,
+                        FeedbackMarkdown = feedbackMarkdown,
+                        VideoUrl = videoUrl
+                    };
+                    results.Add(feedback);
                 }
             }
 
@@ -209,38 +289,38 @@ namespace ApiReview.Server.Services
                 DecisionTime = decisionTime;
             }
 
-            public static ApiReviewOutcome Get(IEnumerable<EventInfo> events, DateTimeOffset start, DateTimeOffset end)
+            public static ApiReviewOutcome Get(IEnumerable<ApiTimelineItem> items, DateTimeOffset start, DateTimeOffset end)
             {
-                var readyEvent = default(EventInfo);
+                var readyEvent = default(ApiTimelineLabeled);
                 var current = default(ApiReviewOutcome);
                 var rejection = default(ApiReviewOutcome);
 
-                foreach (var e in events.Where(e => e.CreatedAt <= end)
-                                        .OrderBy(e => e.CreatedAt))
+                foreach (var e in items.Where(e => e.CreatedAt <= end)
+                                       .OrderBy(e => e.CreatedAt))
                 {
-                    switch (e.Event.StringValue)
+                    switch (e)
                     {
-                        case "labeled" when string.Equals(e.Label.Name, "api-ready-for-review", StringComparison.OrdinalIgnoreCase):
+                        case ApiTimelineLabeled rl when string.Equals(rl.LabelName, "api-ready-for-review", StringComparison.OrdinalIgnoreCase):
                             current = null;
-                            readyEvent = e;
+                            readyEvent = rl;
                             break;
-                        case "labeled" when string.Equals(e.Label.Name, "api-approved", StringComparison.OrdinalIgnoreCase):
-                            current = new ApiReviewOutcome(ApiReviewDecision.Approved, e.Actor.Login, e.CreatedAt);
+                        case ApiTimelineLabeled al when string.Equals(al.LabelName, "api-approved", StringComparison.OrdinalIgnoreCase):
+                            current = new ApiReviewOutcome(ApiReviewDecision.Approved, e.Actor, e.CreatedAt);
                             readyEvent = null;
                             break;
-                        case "labeled" when string.Equals(e.Label.Name, "api-needs-work", StringComparison.OrdinalIgnoreCase):
+                        case ApiTimelineLabeled wl when string.Equals(wl.LabelName, "api-needs-work", StringComparison.OrdinalIgnoreCase):
                             if (readyEvent != null)
                             {
-                                current = new ApiReviewOutcome(ApiReviewDecision.NeedsWork, e.Actor.Login, e.CreatedAt);
+                                current = new ApiReviewOutcome(ApiReviewDecision.NeedsWork, e.Actor, e.CreatedAt);
                                 readyEvent = null;
                             }
                             break;
-                        case "reopened":
+                        case ApiTimelineReopened _:
                             rejection = null;
                             break;
-                        case "closed":
+                        case ApiTimelineClosed _:
                             if (readyEvent != null)
-                                rejection = new ApiReviewOutcome(ApiReviewDecision.Rejected, e.Actor.Login, e.CreatedAt);
+                                rejection = new ApiReviewOutcome(ApiReviewDecision.Rejected, e.Actor, e.CreatedAt);
                             break;
                     }
                 }
@@ -261,6 +341,52 @@ namespace ApiReview.Server.Services
             public ApiReviewDecision Decision { get; }
             public string DecisionMaker { get; }
             public DateTimeOffset DecisionTime { get; }
+        }
+
+        private sealed class FeedbackIssue
+        {
+            public string Owner { get; set; }
+            public string Repo { get; set; }
+            public int Number { get; set; }
+            public DateTimeOffset CreateAt { get; set; }
+            public string Author { get; set; }
+            public string Title { get; set; }
+            public IssueState State { get; set; }
+            public string Milestone { get; set; }
+            public string Url { get; set; }
+            public List<ApiReviewLabel> Labels { get; set; }
+            public List<ApiTimelineItem> TimelineItems { get; set; }
+
+            public override string ToString()
+            {
+                return $"{Owner}/{Repo}#{Number}: {Title}";
+            }
+        }
+
+        private abstract class ApiTimelineItem
+        {
+            public string Actor { get; set; }
+            public DateTimeOffset CreatedAt { get; set; }
+        }
+
+        private sealed class ApiTimelineCommented : ApiTimelineItem
+        {
+            public string Id { get; set; }
+            public string Body { get; set; }
+            public string Url { get; set; }
+        }
+
+        private sealed class ApiTimelineLabeled : ApiTimelineItem
+        {
+            public string LabelName { get; set; }
+        }
+
+        private sealed class ApiTimelineReopened : ApiTimelineItem
+        {
+        }
+
+        private sealed class ApiTimelineClosed : ApiTimelineItem
+        {
         }
     }
 }
