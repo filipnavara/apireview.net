@@ -1,6 +1,10 @@
 ﻿@page "/backlog"
+@using System.Text.Encodings.Web;
+@using Microsoft.AspNetCore.WebUtilities;
 @inject IJSRuntime JSRuntime;
 @inject IssueService IssueService;
+@inject NavigationManager NavigationManager;
+@inject ReviewService ReviewService;
 @attribute [Authorize]
 
 @if (_issues == null)
@@ -14,7 +18,7 @@
 else
 {
     <div class="form-group">
-        <input class="form-control" type="text" placeholder="Filter" @bind="_filter" @bind:event="oninput">
+        <input class="form-control" type="text" placeholder="Filter" value="@_filter" @oninput="Search">
     </div>
     <div class="gh-issue-header">
         <div class="row">
@@ -68,9 +72,9 @@ else
                             <ol class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                 @foreach (var (k, v) in _milestones)
                                 {
-                                    <div class="m-2 checkbox">
-                                        <label><input class="mr-2 " type="checkbox" checked="@v" @onchange="_ => MilestoneChecked(k)" >@k</label>
-                                    </div>
+                                    <li class="m-2 checkbox">
+                                        <label><input class="mr-2 " type="checkbox" checked="@v" @onchange="_ => MilestoneChecked(k)">@k</label>
+                                    </li>
                                 }
                             </ol>
                         </div>
@@ -86,14 +90,19 @@ else
             if (!IsVisible(issue))
                 continue;
 
-            var background = issue.IsBlocking ? "gh-issue-blocking" : "";
+            var review = FindReview(issue);
+            var background = review != null
+                                ? "gh-issue-scheduled"
+                                : issue.IsBlocking
+                                    ? "gh-issue-blocking"
+                                    : "";
 
             <div class="gh-issue-cell @background">
-                <div class="d-flex flex-row align-items-center">
-                    <div class="align-self-center">
+                <div class="row no-gutters align-items-center">
+                    <div class="col-auto">
                         <input class="ml-2 mr-3" type="checkbox" checked="@_checkedIssues.Contains(issue)" @onchange="e => CheckIssue(issue, (bool)e.Value)" />
                     </div>
-                    <div>
+                    <div class="col">
                         <a class="gh-issue-title" href="@issue.Url">@issue.Title</a>
                         <span>
                             @foreach (var label in issue.Labels)
@@ -111,6 +120,13 @@ else
                             }
                         </div>
                     </div>
+                    <div class="col-auto text-muted">
+                        @if (review != null)
+                        {
+                            <span class="oi oi-calendar" aria-hidden="true"></span>
+                            <a class="text-muted small" href="reviews/@review.Id">@review.Date.FormatRelative()</a>
+                        }
+                    </div>
                 </div>
             </div>
         }
@@ -123,10 +139,14 @@ else
     private string _filter;
     private SortedDictionary<string, bool> _milestones;
     private HashSet<ApiReviewIssue> _checkedIssues = new HashSet<ApiReviewIssue>();
+    private ILookup<string, Review> _reviewsByIssue;
 
-    protected override Task OnInitializedAsync()
+    protected override async Task OnInitializedAsync()
     {
-        return RefreshAsync();
+        var uri = NavigationManager.ToAbsoluteUri(NavigationManager.Uri);
+        if (QueryHelpers.ParseQuery(uri.Query).TryGetValue("q", out var q))
+            _filter = q.ToString();
+        await RefreshAsync();
     }
 
     private async Task RefreshAsync()
@@ -135,6 +155,61 @@ else
             await IssueService.RefreshAsync();
         _issues = await IssueService.GetAsync();
         _milestones = CreateMilestones(_issues, _milestones);
+        var reviews = await ReviewService.GetAsync();
+        _reviewsByIssue = reviews.Where(r => !r.IsCompleted)
+                                 .SelectMany(r => r.ScheduledIssues, (r, i) => (r, i))
+                                 .ToLookup(t => t.i.IdFull, t => t.r);
+
+        var comparison = Comparer<ApiReviewIssue>.Create((x, y) =>
+        {
+            if (x == y)
+                return 0;
+
+            var reviewX = FindReview(x);
+            var reviewY = FindReview(y);
+
+            var review = -(reviewX != null).CompareTo((reviewY != null));
+            if (review != 0)
+                return review;
+
+            if (reviewX != null && reviewY != null)
+            {
+                var reviewDate = reviewX.Date.CompareTo(reviewY.Date);
+                if (reviewDate != 0)
+                    return reviewDate;
+            }
+
+            var blocking = -x.IsBlocking.CompareTo(y.IsBlocking);
+            if (blocking != 0)
+                return blocking;
+
+            return x.CreatedAt.CompareTo(y.CreatedAt);
+        });
+
+
+        var issueList = _issues.ToList();
+        issueList.Sort(comparison);
+        _issues = issueList.ToArray();
+    }
+
+    private Review FindReview(ApiReviewIssue issue)
+    {
+        if (_reviewsByIssue == null)
+            return null;
+
+        return _reviewsByIssue[issue.IdFull].OrderBy(r => r.Date).FirstOrDefault();
+    }
+
+    private void Search(ChangeEventArgs e)
+    {
+        if (e.Value is string filter)
+        {
+            _filter = filter.Trim();
+            var url = $"/backlog";
+            if (!string.IsNullOrEmpty(_filter))
+                url += $"?q={UrlEncoder.Default.Encode(_filter)}";
+            NavigationManager.NavigateTo(url);
+        }
     }
 
     private bool IsVisible(ApiReviewIssue issue)
@@ -195,7 +270,7 @@ else
         if (text == null)
             return;
 
-        var html= Markdig.Markdown.ToHtml(text);
+        var html = Markdig.Markdown.ToHtml(text);
         await JSRuntime.InvokeVoidAsync("clipboardCopy.copyText", text, html);
         _checkedIssues.Clear();
     }

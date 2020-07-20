@@ -38,6 +38,7 @@ namespace ApiReview.Client
             services.AddSingleton<BackendHttpClientFactory>();
             services.AddSingleton<IssueService>();
             services.AddSingleton<NotesService>();
+            services.AddSingleton<ReviewService>();
             services.AddAuthentication(options =>
                     {
                         options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;

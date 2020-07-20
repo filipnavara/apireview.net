@@ -1,0 +1,141 @@
+﻿@page "/reviews"
+@inject ReviewService ReviewService;
+@inject NavigationManager NavigationManager;
+
+<div class="row no-gutters mb-3">
+    <div class="col">
+
+    </div>
+    <div class="col-auto">
+        <button class="btn btn-success btn-sm" @onclick="NewReviewAsync">New Review</button>
+    </div>
+</div>
+
+@if (_reviews == null)
+{
+    <div class="text-center">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+}
+else
+{
+    @foreach (var review in _reviews)
+    {
+        <div class="card mb-4">
+            <div class="card-header">
+                <h5>
+                    <a class="text-dark" href="reviews/@review.Id">@review.Title</a>
+                    <span class="small text-muted">
+                        @review.Date.FormatRelative()
+                    </span>
+                </h5>
+            </div>
+            <div class="card-body">
+                <p class="card-text">@review.Description</p>
+            </div>
+
+            @if (review.ScheduledIssues?.Count > 0)
+            {
+                <div class="card-footer">
+                    @foreach (var issue in review.ScheduledIssues)
+                    {
+                        <div class="mb-1">
+                            <a class="gh-issue-title" href="@issue.Url">@issue.Title</a>
+                            <span>
+                                @foreach (var label in issue.Labels)
+                                {
+                                    <span class="gh-label"
+                                          style="background: @("#" + label.BackgroundColor); color: @label.ForegroundColor">@label.Name</span>
+                                    }
+                            </span>
+                            <div class="gh-details-cell">
+                                @issue.DetailText
+
+                                @if (issue.Milestone != null)
+                                {
+                                    <span class="ml-2 mr-1 oi oi-signpost text-muted" aria-hidden="true"></span>@issue.Milestone
+                                }
+                            </div>
+                        </div>
+                    }
+                </div>
+            }
+        </div>
+    }
+}
+
+@code{
+
+    private IReadOnlyList<Review> _reviews;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _reviews = await ReviewService.GetAsync();
+        _reviews = _reviews.Where(r => !r.IsCompleted).ToArray();
+    }
+
+    private async Task NewReviewAsync()
+    {
+        var reviewSlots = new[]
+        {
+            new
+            {
+                Day = DayOfWeek.Tuesday,
+                Start = TimeSpan.FromHours(10),
+                Duration = TimeSpan.FromHours(2)
+            },
+            new
+            {
+                Day = DayOfWeek.Thursday,
+                Start = TimeSpan.FromHours(10),
+                Duration = TimeSpan.FromHours(2)
+            },
+            new
+            {
+                Day = DayOfWeek.Friday,
+                Start = TimeSpan.FromHours(10),
+                Duration = TimeSpan.FromHours(2)
+            }
+        };
+
+        DateTimeOffset GetNextSlot(DateTimeOffset date)
+        {
+            for (var i = 0; i < 7; i++)
+            {
+                foreach (var slot in reviewSlots)
+                {
+                    if (slot.Day == date.DayOfWeek)
+                    {
+                        if (slot.Start > date.TimeOfDay)
+                            return date.Date.Add(slot.Start);
+                    }
+                }
+
+                date = date.Date.AddDays(1);
+            }
+
+            throw new Exception("Unreachable");
+        }
+
+        var now = DateTimeOffset.Now;
+        var lastReviewDate = _reviews.Any()
+            ? _reviews.Max(r => r.Date)
+            : now;
+
+        if (lastReviewDate < now)
+            lastReviewDate = now;
+
+        var nextDate = GetNextSlot(lastReviewDate);
+
+        var review = new Review
+        {
+            Date = nextDate,
+            Title = "GitHub Quick Reviews"
+        };
+
+        review = await ReviewService.CreateAsync(review);
+        NavigationManager.NavigateTo($"reviews/{review.Id}");
+    }
+}

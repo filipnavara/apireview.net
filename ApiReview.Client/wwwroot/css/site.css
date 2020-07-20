@@ -24,7 +24,7 @@ app {
     height: 3.5rem;
     display: flex;
     align-items: center;
-    z-index: 9999;
+    z-index: 1000;
 }
 
 .main {
@@ -209,6 +209,14 @@ app {
         background-color: #f6f8fa;
     }
 
+.gh-issue-scheduled {
+    background: #cfe0ff;
+}
+
+    .gh-issue-scheduled:hover {
+        background-color: #e7eefc;
+    }
+
 .gh-issue-blocking {
     background: #ffd9d9;
 }
@@ -257,3 +265,31 @@ app {
 .yt-video-selected {
     background: lightblue;
 }
+
+/*
+    =========================
+    Review
+    =========================
+*/
+
+.review-card {
+/*    border: 1px solid #e1e4e8;
+    border: 0px;
+*/
+    margin-bottom: 1em;
+}
+
+.review-card-header {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background-color: aliceblue;
+    padding: .5em;
+}
+
+.review-card-body {
+    padding: .5em;
+}
+
+.review-card-issue-list {
+}
+

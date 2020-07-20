@@ -1,0 +1,301 @@
+﻿@page "/reviews/{id:int}"
+@inject ReviewService ReviewService;
+@inject IssueService IssueService;
+@inject NavigationManager NavigationManager;
+
+@if (_review == null)
+{
+    <div class="text-center">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+}
+else
+{
+    @if (!_editing)
+    {
+        <div class="row">
+            <div class="col">
+                <h3>
+                    @_review.Title
+                    <span class="small text-muted">
+                        #@_review.Id
+                    </span>
+                </h3>
+            </div>
+            <div class="col-auto">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-light" @onclick="Edit">Edit</button>
+                    <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" @onclick="Edit">Edit</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" @onclick="ConfirmDeletion">Delete</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-muted mb-2">
+            @_review.Date.FormatRelative()
+        </div>
+    }
+    else
+    {
+        <div class="row no-gutters align-items-center">
+            <div class="col">
+                <input class="form-control form-control-lg" @bind="@_review.Title" placeholder="Title" />
+            </div>
+            <div class="col-auto">
+                <button class="btn btn-success ml-2" @onclick="Save">Save</button>
+            </div>
+            <div class="col-auto">
+                <button class="btn btn-link" @onclick="Cancel">Cancel</button>
+            </div>
+        </div>
+        <div class="row my-2">
+            <div class="col-auto">
+                <input class="form-control form-control-sm" type="datetime-local" @bind:format="yyyy-MM-ddTHH:mm" @bind="_review.Date" />
+            </div>
+        </div>
+    }
+
+    <div class="card mb-4">
+        @{
+            var cardBodyPadding = _editing ? "p-1" : "";
+        }
+        <div class="card-body @cardBodyPadding">
+            @if (!_editing)
+            {
+                <p class="card-text">
+                    @_review.Description
+                </p>
+            }
+            else
+            {
+                <textarea class="form-control m-0" rows="3" @bind="_review.Description"></textarea>
+            }
+        </div>
+        @if (_review.ScheduledIssues?.Count > 0)
+        {
+            <div class="card-footer">
+                @foreach (var issue in _review.ScheduledIssues)
+                {
+                    <div class="row no-gutters mt-2 align-items-center">
+                        <div class="col">
+                            <a class="gh-issue-title" href="@issue.Url">@issue.Title</a>
+                            <span>
+                                @foreach (var label in issue.Labels)
+                                {
+                                    <span class="gh-label"
+                                          style="background: @("#" + label.BackgroundColor); color: @label.ForegroundColor">@label.Name</span>
+                                    }
+                            </span>
+                            <div class="gh-details-cell">
+                                @issue.DetailText
+
+                                @if (issue.Milestone != null)
+                                {
+                                    <span class="ml-2 mr-1 oi oi-signpost text-muted" aria-hidden="true"></span>@issue.Milestone
+                                }
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            @if (_review.ScheduledIssues.First() != issue)
+                            {
+                                <button class="btn btn-secondary btn-sm" @onclick="() => MoveIssue(issue, -1)"><span class="oi oi-caret-top"></span></button>
+                            }
+                        </div>
+                        <div class="col-auto">
+                            @if (_review.ScheduledIssues.Last() != issue)
+                            {
+                                <button class="btn btn-secondary btn-sm ml-2" @onclick="() => MoveIssue(issue, +1)"><span class="oi oi-caret-bottom"></span></button>
+                            }
+                            </div>
+                        <div class="col-auto">
+                                <button class="btn btn-danger btn-sm ml-2" @onclick="() => RemoveIssue(issue)"><span class="oi oi-minus"></span></button>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+        <div class="card-footer">
+            <div class="form-group m-0">
+                <input class="form-control form-control-sm" placeholder="Search issue to link" @oninput="SuggestIssuesAsync" />
+            </div>
+            @foreach (var suggestedIssue in _suggestedIssues)
+            {
+                <div class="row no-gutters mt-2 align-items-center">
+                    <div class="col-auto mr-2">
+                        <button class="btn btn-success btn-sm" @onclick="() => AddIssue(suggestedIssue)"><span class="oi oi-plus"></span></button>
+                    </div>
+                    <div class="col">
+                        <a class="gh-issue-title" href="@suggestedIssue.Url">@suggestedIssue.Title</a>
+                        <span>
+                            @foreach (var label in suggestedIssue.Labels)
+                            {
+                                <span class="gh-label"
+                                      style="background: @("#" + label.BackgroundColor); color: @label.ForegroundColor">@label.Name</span>
+                                }
+                        </span>
+                        <div class="gh-details-cell">
+                            @suggestedIssue.DetailText
+
+                            @if (suggestedIssue.Milestone != null)
+                            {
+                                <span class="ml-2 mr-1 oi oi-signpost text-muted" aria-hidden="true"></span>@suggestedIssue.Milestone
+                            }
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+}
+
+@if (_review?.Summary != null)
+{
+    foreach (var item in _review.Summary.Items)
+    {
+        <div class="card mb-4">
+            <div class="card-header">
+                <span class="badge badge-success">@item.Feedback.Decision</span>
+                <span class="text-muted font-weight-bold">@item.Feedback.FeedbackAuthor</span>
+                <span class="text-muted small">@item.Feedback.FeedbackDateTime.FormatRelative()</span>
+            </div>
+            <div class="card-body">
+                @item.Feedback.FeedbackMarkdown
+            </div>            
+        </div>
+    }
+}
+
+@if (_deleteConfirmation)
+{
+    <div class="modal show" tabindex="-1" role="dialog" style="display:block;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Delete review</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" @onclick="CancelDeletion">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Are you sure you want to delete this review?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" @onclick="Delete">Delete</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" @onclick="CancelDeletion">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-backdrop fade show"></div>
+}
+
+@code{
+
+    private Review _review;
+    private bool _editing;
+    private bool _deleteConfirmation;
+    private string _filter;
+    private List<ApiReviewIssue> _suggestedIssues = new List<ApiReviewIssue>();
+
+    [Parameter]
+    public int Id { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        _review = await ReviewService.GetByIdAsync(Id);
+    }
+
+    private void Edit()
+    {
+        _editing = true;
+    }
+
+    private void Save()
+    {
+        _editing = false;
+    }
+
+    private void Cancel()
+    {
+        _editing = false;
+    }
+
+    private void ConfirmDeletion()
+    {
+        _deleteConfirmation = true;
+    }
+
+    private void CancelDeletion()
+    {
+        _deleteConfirmation = false;
+    }
+
+    private async Task Delete()
+    {
+        await ReviewService.DeleteAsync(_review.Id);
+        NavigationManager.NavigateTo("/reviews");
+    }
+
+    private async Task SuggestIssuesAsync(ChangeEventArgs e)
+    {
+        if (e.Value is string filter)
+        {
+            _suggestedIssues.Clear();
+            if (filter.Length > 0)
+            {
+                var issues = await IssueService.GetAsync();
+
+                foreach (var issue in issues)
+                {
+                    var alreadyLinked = _review.ScheduledIssues?.Any(s => s.IdFull == issue.IdFull) == true;
+                    if (alreadyLinked)
+                        continue;
+
+                    var match = issue.IdFull.Contains(filter, StringComparison.OrdinalIgnoreCase) ||
+                            issue.Title.Contains(filter, StringComparison.OrdinalIgnoreCase) ||
+                            issue.Labels.Any(l => l.Name.Contains(filter, StringComparison.OrdinalIgnoreCase)) ||
+                            issue.Milestone?.Contains(filter, StringComparison.OrdinalIgnoreCase) == true;
+
+                    if (match)
+                        _suggestedIssues.Add(issue);
+                }
+            }
+        }
+    }
+
+    private void AddIssue(ApiReviewIssue issue)
+    {
+        var issues = _review.ScheduledIssues?.ToList() ?? new List<ApiReviewIssue>();
+        issues.Add(issue);
+        _review.ScheduledIssues = issues.ToArray();
+        _suggestedIssues.Remove(issue);
+    }
+
+    private void RemoveIssue(ApiReviewIssue issue)
+    {
+        var issues = _review.ScheduledIssues.ToList();
+        issues.Remove(issue);
+        _review.ScheduledIssues = issues.ToArray();
+    }
+
+    private void MoveIssue(ApiReviewIssue issue, int direction)
+    {
+        var issues = _review.ScheduledIssues.ToList();
+        var index = issues.IndexOf(issue);
+        var newIndex = index + direction;
+        if (index < 0 || index >= issues.Count)
+            return;
+
+        issues.RemoveAt(index);
+        issues.Insert(newIndex, issue);
+        _review.ScheduledIssues = issues.ToArray();
+    }
+}
