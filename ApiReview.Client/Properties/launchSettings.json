@@ -11,6 +11,7 @@
     "dev": {
       "commandName": "IISExpress",
       "launchBrowser": true,
+      "launchUrl": "reviews",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

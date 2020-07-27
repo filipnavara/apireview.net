@@ -1,0 +1,1874 @@
+[
+  {
+    "Url": "https://www.youtube.com/watch?v=I-WveN1lSXI",
+    "Id": "I-WveN1lSXI",
+    "StartDateTime": "2015-06-09T10:06:50.051-07:00",
+    "EndDateTime": "2015-06-09T11:43:32-07:00",
+    "Duration": 58019490000,
+    "Title": ".NET Core Design Reviews: OS Version",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/I-WveN1lSXI/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=5uWPK4xv2zg",
+    "Id": "5uWPK4xv2zg",
+    "StartDateTime": "2015-06-16T10:08:05.721-07:00",
+    "EndDateTime": "2015-06-16T12:01:07-07:00",
+    "Duration": 67812790000,
+    "Title": ".NET Core Design Reviews: Web Encoding APIs",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/5uWPK4xv2zg/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=4O2i2A49oY4",
+    "Id": "4O2i2A49oY4",
+    "StartDateTime": "2015-06-30T10:06:47.303-07:00",
+    "EndDateTime": "2015-06-30T12:13:51-07:00",
+    "Duration": 76236970000,
+    "Title": ".NET Core Design Reviews: Configuration and Options",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/4O2i2A49oY4/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=HuRc6CpiOVg",
+    "Id": "HuRc6CpiOVg",
+    "StartDateTime": "2015-07-07T10:10:12.712-07:00",
+    "EndDateTime": "2015-07-07T11:23:08-07:00",
+    "Duration": 43752880000,
+    "Title": ".NET Core Design Reviews: ILDASM and System.Drawing.Primitives",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/HuRc6CpiOVg/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=28xZ7Xb5MhE",
+    "Id": "28xZ7Xb5MhE",
+    "StartDateTime": "2015-07-14T10:08:25.082-07:00",
+    "EndDateTime": "2015-07-14T11:09:16-07:00",
+    "Duration": 36509180000,
+    "Title": ".NET Core Design Reviews: SecureString",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/28xZ7Xb5MhE/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=lpa2OFauASM",
+    "Id": "lpa2OFauASM",
+    "StartDateTime": "2015-07-28T10:06:15.365-07:00",
+    "EndDateTime": "2015-07-28T11:01:27-07:00",
+    "Duration": 33116350000,
+    "Title": ".NET Core Design Reviews: MAX_PATH Limitations",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/lpa2OFauASM/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=o6P8B-fw_e8",
+    "Id": "o6P8B-fw_e8",
+    "StartDateTime": "2015-08-04T10:07:36.835-07:00",
+    "EndDateTime": "2015-08-04T11:25:24-07:00",
+    "Duration": 46671650000,
+    "Title": ".NET Core Design Reviews: IO and ILDASM",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/o6P8B-fw_e8/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=9eduSpuE77Y",
+    "Id": "9eduSpuE77Y",
+    "StartDateTime": "2015-08-11T10:07:58.228-07:00",
+    "EndDateTime": "2015-08-11T10:33:51-07:00",
+    "Duration": 15527720000,
+    "Title": ".NET Core Design Reviews: Process and SecureString",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/9eduSpuE77Y/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=e280_R20FA0",
+    "Id": "e280_R20FA0",
+    "StartDateTime": "2015-08-21T10:14:31.526-07:00",
+    "EndDateTime": "2015-08-21T10:57:51-07:00",
+    "Duration": 25994740000,
+    "Title": ".NET Core Design Reviews: TryGetRawMetatadata",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/e280_R20FA0/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=Ovb4f-flpKg",
+    "Id": "Ovb4f-flpKg",
+    "StartDateTime": "2015-08-26T11:09:28.228-07:00",
+    "EndDateTime": "2015-08-26T11:27:12-07:00",
+    "Duration": 10637720000,
+    "Title": ".NET Core Design Reviews: MAX_PATH Review",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/Ovb4f-flpKg/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=vpMqUBIAnLU",
+    "Id": "vpMqUBIAnLU",
+    "StartDateTime": "2015-08-26T11:31:47.57-07:00",
+    "EndDateTime": "2015-08-26T12:06:20-07:00",
+    "Duration": 20724300000,
+    "Title": ".NET Core Design Reviews: MAX_PATH Review",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/vpMqUBIAnLU/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=fJj04wKLS7Y",
+    "Id": "fJj04wKLS7Y",
+    "StartDateTime": "2015-09-08T11:11:34.488-07:00",
+    "EndDateTime": "2015-09-08T12:03:36-07:00",
+    "Duration": 31215120000,
+    "Title": ".NET Core Design Reviews: Backlog Review",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/fJj04wKLS7Y/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=bRf4iNBw_Ho",
+    "Id": "bRf4iNBw_Ho",
+    "StartDateTime": "2015-09-22T10:11:33.333-07:00",
+    "EndDateTime": "2015-09-22T11:39:03-07:00",
+    "Duration": 52496670000,
+    "Title": ".NET Core Design Reviews: ITelemetry*, INotify, AssemblyLoadContext.LoadUnmanagedDllFromPath",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/bRf4iNBw_Ho/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=xW3Z22z2OKs",
+    "Id": "xW3Z22z2OKs",
+    "StartDateTime": "2015-09-29T10:14:05.599-07:00",
+    "EndDateTime": "2015-09-29T12:14:21-07:00",
+    "Duration": 72154010000,
+    "Title": ".NET Core Design Reviews: Backlog \u0026 Serialization",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/xW3Z22z2OKs/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=UCLqQLzuYgk",
+    "Id": "UCLqQLzuYgk",
+    "StartDateTime": "2015-10-09T10:10:34.264-07:00",
+    "EndDateTime": "2015-10-09T11:13:23-07:00",
+    "Duration": 37687360000,
+    "Title": ".NET Core Design Reviews: Portable PDB",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/UCLqQLzuYgk/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=PXl1We3Yr0I",
+    "Id": "PXl1We3Yr0I",
+    "StartDateTime": "2015-10-27T10:06:12.97-07:00",
+    "EndDateTime": "2015-10-27T11:38:44-07:00",
+    "Duration": 55510300000,
+    "Title": ".NET Core Design Reviews: C# Interactive APIs",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/PXl1We3Yr0I/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=Di7yCpDTy5g",
+    "Id": "Di7yCpDTy5g",
+    "StartDateTime": "2015-10-30T10:06:20.306-07:00",
+    "EndDateTime": "2015-10-30T11:00:51-07:00",
+    "Duration": 32706940000,
+    "Title": ".NET Core Design Reviews: Misc",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/Di7yCpDTy5g/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=_JB8U-T-wng",
+    "Id": "_JB8U-T-wng",
+    "StartDateTime": "2015-11-20T10:08:13.8-08:00",
+    "EndDateTime": "2015-11-20T11:01:32-08:00",
+    "Duration": 31982000000,
+    "Title": ".NET Core Design Reviews: ManagedBufferPool",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/_JB8U-T-wng/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=QEzipql-oUw",
+    "Id": "QEzipql-oUw",
+    "StartDateTime": "2015-11-24T10:06:36.147-08:00",
+    "EndDateTime": "2015-11-24T11:51:39-08:00",
+    "Duration": 63028530000,
+    "Title": ".NET Core Design Reviews: Networking APIs",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/QEzipql-oUw/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=nG-Af_TgYbI",
+    "Id": "nG-Af_TgYbI",
+    "StartDateTime": "2015-12-04T10:04:55.599-08:00",
+    "EndDateTime": "2015-12-04T10:47:26-08:00",
+    "Duration": 25504010000,
+    "Title": ".NET Core Design Reviews: Backlog review",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/nG-Af_TgYbI/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=78wMxlA58QA",
+    "Id": "78wMxlA58QA",
+    "StartDateTime": "2015-12-08T10:05:12.913-08:00",
+    "EndDateTime": "2015-12-08T11:00:30-08:00",
+    "Duration": 33170870000,
+    "Title": ".NET Core Design Reviews: Misc",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/78wMxlA58QA/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=Nf-IP6KEhf8",
+    "Id": "Nf-IP6KEhf8",
+    "StartDateTime": "2016-01-08T10:05:57.456-08:00",
+    "EndDateTime": "2016-01-08T11:08:55-08:00",
+    "Duration": 37775440000,
+    "Title": ".NET Core Design Reviews: Backlog review",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/Nf-IP6KEhf8/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=QoaLMB2Y5kM",
+    "Id": "QoaLMB2Y5kM",
+    "StartDateTime": "2016-01-12T10:10:55.674-08:00",
+    "EndDateTime": "2016-01-12T11:31:26-08:00",
+    "Duration": 48303260000,
+    "Title": ".NET Core Design Reviews: SIMD and Console",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/QoaLMB2Y5kM/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=dkcLZX1tTW4",
+    "Id": "dkcLZX1tTW4",
+    "StartDateTime": "2016-01-15T10:08:36.45-08:00",
+    "EndDateTime": "2016-01-15T11:08:40-08:00",
+    "Duration": 36035500000,
+    "Title": ".NET Core Design Reviews: Finalization during shutdown",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/dkcLZX1tTW4/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=2pzViU31ric",
+    "Id": "2pzViU31ric",
+    "StartDateTime": "2016-01-19T10:11:38.833-08:00",
+    "EndDateTime": "2016-01-19T12:13:47-08:00",
+    "Duration": 73281670000,
+    "Title": ".NET Core Design Reviews: Bringing back Reflection APIs",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/2pzViU31ric/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=aZqNPrSOJUw",
+    "Id": "aZqNPrSOJUw",
+    "StartDateTime": "2016-01-26T10:24:35.189-08:00",
+    "EndDateTime": "2016-01-26T12:04:15-08:00",
+    "Duration": 59798110000,
+    "Title": ".NET Core Design Reviews: Bringing back Reflection APIs (2)",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/aZqNPrSOJUw/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=Jh8Ks6Smt_c",
+    "Id": "Jh8Ks6Smt_c",
+    "StartDateTime": "2016-01-29T10:09:03.561-08:00",
+    "EndDateTime": "2016-01-29T11:01:30-08:00",
+    "Duration": 31464390000,
+    "Title": ".NET Core Design Reviews: Bringing back Reflection APIs (3)",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/Jh8Ks6Smt_c/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=DhIkZ3kBK_k",
+    "Id": "DhIkZ3kBK_k",
+    "StartDateTime": "2016-02-02T10:22:32.118-08:00",
+    "EndDateTime": "2016-02-02T12:00:27-08:00",
+    "Duration": 58748820000,
+    "Title": ".NET Core Design Reviews: ADO.NET",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/DhIkZ3kBK_k/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=XCzRDTwYSMQ",
+    "Id": "XCzRDTwYSMQ",
+    "StartDateTime": "2016-02-05T10:06:42.47-08:00",
+    "EndDateTime": "2016-02-05T12:04:37-08:00",
+    "Duration": 70745300000,
+    "Title": ".NET Core Design Reviews: Roslyn\u0027s IOperation",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/XCzRDTwYSMQ/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=ILLbn9pPwWk",
+    "Id": "ILLbn9pPwWk",
+    "StartDateTime": "2016-02-09T10:11:10.037-08:00",
+    "EndDateTime": "2016-02-09T11:47:05-08:00",
+    "Duration": 57549630000,
+    "Title": ".NET Core Design Reviews: ADO.NET",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/ILLbn9pPwWk/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=uwOV6_cEJFw",
+    "Id": "uwOV6_cEJFw",
+    "StartDateTime": "2016-02-26T10:06:19.949-08:00",
+    "EndDateTime": "2016-02-26T11:07:05-08:00",
+    "Duration": 36450510000,
+    "Title": ".NET Core Design Reviews: BufferPool in CoreFX and Exceptions",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/uwOV6_cEJFw/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=43HYL4YGWho",
+    "Id": "43HYL4YGWho",
+    "StartDateTime": "2016-03-08T10:06:44.14-08:00",
+    "EndDateTime": "2016-03-08T11:50:11-08:00",
+    "Duration": 62068600000,
+    "Title": ".NET Core Design Reviews: TypeDescriptors",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/43HYL4YGWho/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=IXg58zMsPug",
+    "Id": "IXg58zMsPug",
+    "StartDateTime": "2017-07-11T11:04:26.116-07:00",
+    "EndDateTime": "2017-07-11T12:05:07-07:00",
+    "Duration": 36408840000,
+    "Title": ".NET Core Design Reviews: System.IO.Pipelines",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/IXg58zMsPug/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=VKnHYFIQpOs",
+    "Id": "VKnHYFIQpOs",
+    "StartDateTime": "2017-07-17T10:10:20.742-07:00",
+    "EndDateTime": "2017-07-17T12:08:52-07:00",
+    "Duration": 71112580000,
+    "Title": ".NET Core Design Reviews: Add initial Span/Buffer-based APIs across corefx",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/VKnHYFIQpOs/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=jKQWMCPZ08Y",
+    "Id": "jKQWMCPZ08Y",
+    "StartDateTime": "2017-07-18T10:09:59.772-07:00",
+    "EndDateTime": "2017-07-18T12:03:25-07:00",
+    "Duration": 68052280000,
+    "Title": ".NET Core Design Reviews: Add initial Span/Buffer-based APIs across corefx (Round 2)",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/jKQWMCPZ08Y/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=10w3tS03W60",
+    "Id": "10w3tS03W60",
+    "StartDateTime": "2017-07-25T10:09:36.033-07:00",
+    "EndDateTime": "2017-07-25T11:30:07-07:00",
+    "Duration": 48309670000,
+    "Title": ".NET Core Design Reviews: Add initial Span/Buffer-based APIs across corefx (Round 3)",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/10w3tS03W60/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=VppFZYG-9cA",
+    "Id": "VppFZYG-9cA",
+    "StartDateTime": "2017-08-29T10:09:41.581-07:00",
+    "EndDateTime": "2017-08-29T12:03:24-07:00",
+    "Duration": 68224190000,
+    "Title": ".NET Design Reviews: GitHub Triage",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/VppFZYG-9cA/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=m4BUM3nJZRw",
+    "Id": "m4BUM3nJZRw",
+    "StartDateTime": "2017-10-03T10:00:56.39-07:00",
+    "EndDateTime": "2017-10-03T12:07:35-07:00",
+    "Duration": 75986100000,
+    "Title": ".NET Design Reviews: GitHub Triage",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/m4BUM3nJZRw/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=b96co3sNzNI",
+    "Id": "b96co3sNzNI",
+    "StartDateTime": "2017-10-10T10:07:40.535-07:00",
+    "EndDateTime": "2017-10-10T11:43:07-07:00",
+    "Duration": 57264650000,
+    "Title": ".NET Design Reviews: GitHub Triage",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/b96co3sNzNI/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=BEBq3__WfDc",
+    "Id": "BEBq3__WfDc",
+    "StartDateTime": "2017-10-17T10:07:23.564-07:00",
+    "EndDateTime": "2017-10-17T12:03:46-07:00",
+    "Duration": 69824360000,
+    "Title": ".NET Design Reviews: GitHub Triage",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/BEBq3__WfDc/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=OZnaGV2omvI",
+    "Id": "OZnaGV2omvI",
+    "StartDateTime": "2017-10-24T10:06:29.118-07:00",
+    "EndDateTime": "2017-10-24T12:02:36-07:00",
+    "Duration": 69668820000,
+    "Title": ".NET Design Reviews: GitHub Triage",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/OZnaGV2omvI/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=bHwCPVNQLwo",
+    "Id": "bHwCPVNQLwo",
+    "StartDateTime": "2017-10-31T10:05:29.096-07:00",
+    "EndDateTime": "2017-10-31T11:54:01-07:00",
+    "Duration": 65119040000,
+    "Title": ".NET Design Reviews: GitHub Triage",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/bHwCPVNQLwo/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=HnKmLJcEM74",
+    "Id": "HnKmLJcEM74",
+    "StartDateTime": "2017-11-07T10:11:30.709-08:00",
+    "EndDateTime": "2017-11-07T12:06:50-08:00",
+    "Duration": 69192910000,
+    "Title": ".NET Design Reviews: GitHub Triage",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/HnKmLJcEM74/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=o5JFZtgaJLs",
+    "Id": "o5JFZtgaJLs",
+    "StartDateTime": "2017-11-21T10:16:08.038-08:00",
+    "EndDateTime": "2017-11-21T11:47:37-08:00",
+    "Duration": 54889620000,
+    "Title": ".NET Design Reviews: GitHub Triage",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/o5JFZtgaJLs/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=9F_NsviGT0Y",
+    "Id": "9F_NsviGT0Y",
+    "StartDateTime": "2017-11-28T10:04:25.337-08:00",
+    "EndDateTime": "2017-11-28T11:00:56-08:00",
+    "Duration": 33906630000,
+    "Title": ".NET Design Reviews: GitHub Triage",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/9F_NsviGT0Y/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=BI3iXFT8H7E",
+    "Id": "BI3iXFT8H7E",
+    "StartDateTime": "2017-12-05T10:06:23.791-08:00",
+    "EndDateTime": "2017-12-05T11:57:04-08:00",
+    "Duration": 66402090000,
+    "Title": ".NET Design Reviews: GitHub Triage",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/BI3iXFT8H7E/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=KKUjm8zaJBM",
+    "Id": "KKUjm8zaJBM",
+    "StartDateTime": "2017-12-12T10:08:12.205-08:00",
+    "EndDateTime": "2017-12-12T12:03:59-08:00",
+    "Duration": 69467950000,
+    "Title": ".NET Design Reviews: GitHub Triage",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/KKUjm8zaJBM/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=ZrT0uOsqQlI",
+    "Id": "ZrT0uOsqQlI",
+    "StartDateTime": "2017-12-19T10:07:47.047-08:00",
+    "EndDateTime": "2017-12-19T12:02:33-08:00",
+    "Duration": 68859530000,
+    "Title": ".NET Design Reviews GitHub Triage",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/ZrT0uOsqQlI/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=IIKqOagRdWA",
+    "Id": "IIKqOagRdWA",
+    "StartDateTime": "2017-12-19T14:08:58.263-08:00",
+    "EndDateTime": "2017-12-19T16:00:31-08:00",
+    "Duration": 66927370000,
+    "Title": ".NET Design Reviews Brotli",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/IIKqOagRdWA/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=dOpH6bUNbcw",
+    "Id": "dOpH6bUNbcw",
+    "StartDateTime": "2018-01-02T10:03:50.039-08:00",
+    "EndDateTime": "2018-01-02T10:52:49-08:00",
+    "Duration": 29389610000,
+    "Title": ".NET Design Reviews GitHub Triage",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/dOpH6bUNbcw/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=tLnQsNTfl9Q",
+    "Id": "tLnQsNTfl9Q",
+    "StartDateTime": "2018-01-09T10:07:11.739-08:00",
+    "EndDateTime": "2018-01-09T12:05:04-08:00",
+    "Duration": 70722610000,
+    "Title": ".NET Design Review: System.IO.Pipelines",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/tLnQsNTfl9Q/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=1t_a9fbB3jY",
+    "Id": "1t_a9fbB3jY",
+    "StartDateTime": "2018-01-12T13:06:19.158-08:00",
+    "EndDateTime": "2018-01-12T15:39:05-08:00",
+    "Duration": 91658420000,
+    "Title": ".NET Design Review: Core Pipelines APIs",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/1t_a9fbB3jY/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=rSVM5RmAhso",
+    "Id": "rSVM5RmAhso",
+    "StartDateTime": "2018-01-16T10:06:19.237-08:00",
+    "EndDateTime": "2018-01-16T13:32:34-08:00",
+    "Duration": 123747630000,
+    "Title": ".NET Design Reviews GitHub Triage and MemoryPool",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/rSVM5RmAhso/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=Qcqn-yv1X0o",
+    "Id": "Qcqn-yv1X0o",
+    "StartDateTime": "2018-01-19T14:07:06.962-08:00",
+    "EndDateTime": "2018-01-19T17:17:29-08:00",
+    "Duration": 114220380000,
+    "Title": ".NET Design Reviews Awaiter APIs",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/Qcqn-yv1X0o/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=m3Q6MENq17g",
+    "Id": "m3Q6MENq17g",
+    "StartDateTime": "2018-01-23T10:08:02.689-08:00",
+    "EndDateTime": "2018-01-23T11:58:45-08:00",
+    "Duration": 66423110000,
+    "Title": ".NET Design Reviews GitHub Triage",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/m3Q6MENq17g/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=4hIcv01O3aQ",
+    "Id": "4hIcv01O3aQ",
+    "StartDateTime": "2018-02-13T10:08:00.752-08:00",
+    "EndDateTime": "2018-02-13T12:08:59-08:00",
+    "Duration": 72582480000,
+    "Title": ".NET Design Reviews GitHub Triage",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/4hIcv01O3aQ/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=9BC3Q1kgWAA",
+    "Id": "9BC3Q1kgWAA",
+    "StartDateTime": "2018-02-20T10:05:09.983-08:00",
+    "EndDateTime": "2018-02-20T11:02:19-08:00",
+    "Duration": 34290170000,
+    "Title": ".NET Design Reviews GitHub Triage",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/9BC3Q1kgWAA/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=1pR7fDL0PBA",
+    "Id": "1pR7fDL0PBA",
+    "StartDateTime": "2018-02-27T10:06:34.794-08:00",
+    "EndDateTime": "2018-02-27T12:04:59-08:00",
+    "Duration": 71042060000,
+    "Title": ".NET Design Reviews GitHub Triage",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/1pR7fDL0PBA/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=RsNFSBH3XX0",
+    "Id": "RsNFSBH3XX0",
+    "StartDateTime": "2018-03-13T10:04:05.32-07:00",
+    "EndDateTime": "2018-03-13T11:01:27-07:00",
+    "Duration": 34416800000,
+    "Title": ".NET Design Reviews GitHub Triage and Span(of T) Consistency",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/RsNFSBH3XX0/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=HvGnuR6zxfI",
+    "Id": "HvGnuR6zxfI",
+    "StartDateTime": "2018-03-20T10:04:54.246-07:00",
+    "EndDateTime": "2018-03-20T12:02:48-07:00",
+    "Duration": 70737540000,
+    "Title": ".NET Design Reviews GitHub Triage",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/HvGnuR6zxfI/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=cwX05hKkp8s",
+    "Id": "cwX05hKkp8s",
+    "StartDateTime": "2018-03-27T10:10:49.214-07:00",
+    "EndDateTime": "2018-03-27T10:57:46-07:00",
+    "Duration": 28167860000,
+    "Title": ".NET Design Reviews GitHub Triage",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/cwX05hKkp8s/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=FwqoZUlanYg",
+    "Id": "FwqoZUlanYg",
+    "StartDateTime": "2018-04-10T10:07:15.315-07:00",
+    "EndDateTime": "2018-04-10T10:55:40-07:00",
+    "Duration": 29046850000,
+    "Title": ".NET Design Reviews GitHub Triage",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/FwqoZUlanYg/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=8m4ijdz0CXw",
+    "Id": "8m4ijdz0CXw",
+    "StartDateTime": "2018-04-17T10:21:41.214-07:00",
+    "EndDateTime": "2018-04-17T11:02:24-07:00",
+    "Duration": 24427860000,
+    "Title": ".NET Design Reviews GitHub Triage",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/8m4ijdz0CXw/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=E9X-kNjBtG8",
+    "Id": "E9X-kNjBtG8",
+    "StartDateTime": "2018-04-24T10:04:39.717-07:00",
+    "EndDateTime": "2018-04-24T11:02:36-07:00",
+    "Duration": 34762830000,
+    "Title": ".NET Design Reviews GitHub Triage",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/E9X-kNjBtG8/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=-6wyH7K4L9g",
+    "Id": "-6wyH7K4L9g",
+    "StartDateTime": "2018-05-22T10:08:46.33-07:00",
+    "EndDateTime": "2018-05-22T12:00:12-07:00",
+    "Duration": 66856700000,
+    "Title": ".NET Design Reviews GitHub Triage",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/-6wyH7K4L9g/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=ZHKLi8qWTCs",
+    "Id": "ZHKLi8qWTCs",
+    "StartDateTime": "2018-05-29T10:07:46.628-07:00",
+    "EndDateTime": "2018-05-29T10:52:04-07:00",
+    "Duration": 26573720000,
+    "Title": ".NET Design Reviews GitHub Triage",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/ZHKLi8qWTCs/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=CcocbzCjCxM",
+    "Id": "CcocbzCjCxM",
+    "StartDateTime": "2018-06-12T10:09:04.232-07:00",
+    "EndDateTime": "2018-06-12T12:04:14-07:00",
+    "Duration": 69097680000,
+    "Title": ".NET Design Reviews GitHub Triage",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/CcocbzCjCxM/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=KZPwCDVFM6s",
+    "Id": "KZPwCDVFM6s",
+    "StartDateTime": "2018-06-19T10:07:18.265-07:00",
+    "EndDateTime": "2018-06-19T12:04:25-07:00",
+    "Duration": 70267350000,
+    "Title": ".NET Design Reviews: UTF8 Strings",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/KZPwCDVFM6s/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=PKQLZXybOUA",
+    "Id": "PKQLZXybOUA",
+    "StartDateTime": "2018-06-26T10:09:06.741-07:00",
+    "EndDateTime": "2018-06-26T11:35:20-07:00",
+    "Duration": 51732590000,
+    "Title": ".NET Design Reviews GitHub Triage",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/PKQLZXybOUA/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=dCwHCg9TUvA",
+    "Id": "dCwHCg9TUvA",
+    "StartDateTime": "2018-07-17T10:15:29.824-07:00",
+    "EndDateTime": "2018-07-17T11:56:49-07:00",
+    "Duration": 60791760000,
+    "Title": ".NET Design Reviews GitHub Triage",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/dCwHCg9TUvA/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=vkOaqpdiF5U",
+    "Id": "vkOaqpdiF5U",
+    "StartDateTime": "2018-07-24T10:06:11.411-07:00",
+    "EndDateTime": "2018-07-24T11:06:18-07:00",
+    "Duration": 36065890000,
+    "Title": ".NET Design Reviews GitHub Triage",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/vkOaqpdiF5U/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=hLbCfJSPIaI",
+    "Id": "hLbCfJSPIaI",
+    "StartDateTime": "2018-08-28T10:08:02.086-07:00",
+    "EndDateTime": "2018-08-28T12:12:04-07:00",
+    "Duration": 74419140000,
+    "Title": ".NET Design Reviews GitHub Triage",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/hLbCfJSPIaI/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=Jl6ePSwc4QE",
+    "Id": "Jl6ePSwc4QE",
+    "StartDateTime": "2018-09-04T10:06:08.735-07:00",
+    "EndDateTime": "2018-09-04T12:25:31-07:00",
+    "Duration": 83622650000,
+    "Title": ".NET Design Reviews: Hardware Intrinsics (ARM)",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/Jl6ePSwc4QE/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=OWwdiStakGI",
+    "Id": "OWwdiStakGI",
+    "StartDateTime": "2018-09-11T10:04:23.607-07:00",
+    "EndDateTime": "2018-09-11T11:15:54-07:00",
+    "Duration": 42903930000,
+    "Title": ".NET Design Reviews: Hardware Intrinsics (Intel)",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/OWwdiStakGI/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=nJleHEiiX14",
+    "Id": "nJleHEiiX14",
+    "StartDateTime": "2018-09-25T10:08:04.7-07:00",
+    "EndDateTime": "2018-09-25T11:58:39-07:00",
+    "Duration": 66343000000,
+    "Title": ".NET Design Reviews: GitHub Triage",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/nJleHEiiX14/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=OK0jDe8wtyg",
+    "Id": "OK0jDe8wtyg",
+    "StartDateTime": "2018-10-02T10:09:50.711-07:00",
+    "EndDateTime": "2018-10-02T11:50:46-07:00",
+    "Duration": 60552890000,
+    "Title": ".NET Design Reviews: GPIO",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/OK0jDe8wtyg/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=0WN1OXKBMl8",
+    "Id": "0WN1OXKBMl8",
+    "StartDateTime": "2018-10-05T10:10:57.918-07:00",
+    "EndDateTime": "2018-10-05T12:04:24-07:00",
+    "Duration": 68060820000,
+    "Title": ".NET Design Reviews: BufferReader",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/0WN1OXKBMl8/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=W7tcK6uSHdk",
+    "Id": "W7tcK6uSHdk",
+    "StartDateTime": "2018-10-18T10:06:27.076-07:00",
+    "EndDateTime": "2018-10-18T12:03:09-07:00",
+    "Duration": 70019240000,
+    "Title": ".NET Design Reviews: BufferReader",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/W7tcK6uSHdk/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=wtkPtOpI3CA",
+    "Id": "wtkPtOpI3CA",
+    "StartDateTime": "2018-10-19T10:12:14.395-07:00",
+    "EndDateTime": "2018-10-19T12:07:04-07:00",
+    "Duration": 68896050000,
+    "Title": ".NET Design Reviews: GPIO",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/wtkPtOpI3CA/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=MuID_T2I7ds",
+    "Id": "MuID_T2I7ds",
+    "StartDateTime": "2018-10-23T10:08:22.202-07:00",
+    "EndDateTime": "2018-10-23T12:00:07-07:00",
+    "Duration": 67047980000,
+    "Title": ".NET Design Reviews: Xamarin Essentials",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/MuID_T2I7ds/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=XgC0oV29OqM",
+    "Id": "XgC0oV29OqM",
+    "StartDateTime": "2018-10-25T10:08:44.398-07:00",
+    "EndDateTime": "2018-10-25T12:31:05-07:00",
+    "Duration": 85406020000,
+    "Title": ".NET Design Reviews: IAsyncEnumerable \u0026 IAsyncDisposable",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/XgC0oV29OqM/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=UZc3sbJ0-PI",
+    "Id": "UZc3sbJ0-PI",
+    "StartDateTime": "2018-11-02T10:11:33.257-07:00",
+    "EndDateTime": "2018-11-02T11:32:01-07:00",
+    "Duration": 48277430000,
+    "Title": ".NET Design Reviews: GPIO",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/UZc3sbJ0-PI/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=gkQxqUa7KLc",
+    "Id": "gkQxqUa7KLc",
+    "StartDateTime": "2018-11-06T11:09:54.485-08:00",
+    "EndDateTime": "2018-11-06T12:50:46-08:00",
+    "Duration": 60515150000,
+    "Title": ".NET Design Reviews: Intel Hardware Intrinsics",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/gkQxqUa7KLc/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=jFIS4v2H_4s",
+    "Id": "jFIS4v2H_4s",
+    "StartDateTime": "2018-12-07T15:20:53.367-08:00",
+    "EndDateTime": "2018-12-07T16:53:02-08:00",
+    "Duration": 55286330000,
+    "Title": ".NET Design Review: JSON Writer",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/jFIS4v2H_4s/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=6QOv4c1O6ME",
+    "Id": "6QOv4c1O6ME",
+    "StartDateTime": "2018-12-11T10:06:59.033-08:00",
+    "EndDateTime": "2018-12-11T12:13:47-08:00",
+    "Duration": 76079670000,
+    "Title": ".NET Design Review: JSON DOM",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/6QOv4c1O6ME/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=TRKTNxVSzoA",
+    "Id": "TRKTNxVSzoA",
+    "StartDateTime": "2018-12-14T10:10:56.057-08:00",
+    "EndDateTime": "2018-12-14T12:07:44-08:00",
+    "Duration": 70079430000,
+    "Title": ".NET Design Review: char8",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/TRKTNxVSzoA/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=iQMNIeVoAdY",
+    "Id": "iQMNIeVoAdY",
+    "StartDateTime": "2018-12-18T10:08:33.41-08:00",
+    "EndDateTime": "2018-12-18T11:59:33-08:00",
+    "Duration": 66595900000,
+    "Title": ".NET Design Review: GitHub Quick Reviews",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/iQMNIeVoAdY/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=e1nUhoqMJn8",
+    "Id": "e1nUhoqMJn8",
+    "StartDateTime": "2019-01-08T10:10:45.7-08:00",
+    "EndDateTime": "2019-01-08T12:03:08-08:00",
+    "Duration": 67423000000,
+    "Title": ".NET Design Review: GitHub Quick Reviews",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/e1nUhoqMJn8/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=NYliXLGGBwc",
+    "Id": "NYliXLGGBwc",
+    "StartDateTime": "2019-01-15T10:07:14.54-08:00",
+    "EndDateTime": "2019-01-15T11:05:08-08:00",
+    "Duration": 34734600000,
+    "Title": ".NET Design Review: Index and Range",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/NYliXLGGBwc/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=hg82wzIqZa8",
+    "Id": "hg82wzIqZa8",
+    "StartDateTime": "2019-01-16T14:10:00.568-08:00",
+    "EndDateTime": "2019-01-16T16:05:17-08:00",
+    "Duration": 69164320000,
+    "Title": ".NET Design Review: Index and Range",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/hg82wzIqZa8/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=OGuxohgcZZU",
+    "Id": "OGuxohgcZZU",
+    "StartDateTime": "2019-01-18T11:14:07.419-08:00",
+    "EndDateTime": "2019-01-18T12:12:23-08:00",
+    "Duration": 34955810000,
+    "Title": ".NET Design Review: Serialization Guard",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/OGuxohgcZZU/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=jjgr5xruXj4",
+    "Id": "jjgr5xruXj4",
+    "StartDateTime": "2019-01-22T10:10:01.124-08:00",
+    "EndDateTime": "2019-01-22T11:12:13-08:00",
+    "Duration": 37318760000,
+    "Title": ".NET Design Review: GitHub Quick Reviews",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/jjgr5xruXj4/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=3KCS0GW6lUU",
+    "Id": "3KCS0GW6lUU",
+    "StartDateTime": "2019-01-29T10:08:02.266-08:00",
+    "EndDateTime": "2019-01-29T11:52:28-08:00",
+    "Duration": 62657340000,
+    "Title": ".NET Design Review: GitHub Quick Review and DbDataReader Additions",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/3KCS0GW6lUU/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=MXeuyhQ6g0k",
+    "Id": "MXeuyhQ6g0k",
+    "StartDateTime": "2019-01-31T10:10:20.539-08:00",
+    "EndDateTime": "2019-01-31T11:44:57-08:00",
+    "Duration": 56764610000,
+    "Title": ".NET Design Review: IBufferWriter",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/MXeuyhQ6g0k/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=jfJkaggdGws",
+    "Id": "jfJkaggdGws",
+    "StartDateTime": "2019-02-05T09:55:27.116-08:00",
+    "EndDateTime": "2019-02-05T12:01:01-08:00",
+    "Duration": 75338840000,
+    "Title": ".NET Design Review: GitHub Quick Review and UTF8 APIs",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/jfJkaggdGws/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=9TSP4awoHuI",
+    "Id": "9TSP4awoHuI",
+    "StartDateTime": "2019-02-07T10:06:38.252-08:00",
+    "EndDateTime": "2019-02-07T11:39:57-08:00",
+    "Duration": 55987480000,
+    "Title": ".NET Design Review:  PipeReader and PipeWriter implementations over a Stream",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/9TSP4awoHuI/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=I_CNwnkNDNA",
+    "Id": "I_CNwnkNDNA",
+    "StartDateTime": "2019-02-12T10:06:04.972-08:00",
+    "EndDateTime": "2019-02-12T12:02:51-08:00",
+    "Duration": 70060280000,
+    "Title": ".NET Design Review: JSON Serialization",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/I_CNwnkNDNA/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=mAg2UGrkJdA",
+    "Id": "mAg2UGrkJdA",
+    "StartDateTime": "2019-02-19T10:07:05.732-08:00",
+    "EndDateTime": "2019-02-19T12:13:12-08:00",
+    "Duration": 75662680000,
+    "Title": ".NET Design Review: JSON Serialization",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/mAg2UGrkJdA/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=0ReXmy2bQvQ",
+    "Id": "0ReXmy2bQvQ",
+    "StartDateTime": "2019-02-22T10:11:23.946-08:00",
+    "EndDateTime": "2019-02-22T11:02:17-08:00",
+    "Duration": 30530540000,
+    "Title": ".NET Design Review: UTF8 APIs",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/0ReXmy2bQvQ/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=qlj29o0R1rs",
+    "Id": "qlj29o0R1rs",
+    "StartDateTime": "2019-02-26T10:05:41.685-08:00",
+    "EndDateTime": "2019-02-26T12:04:28-08:00",
+    "Duration": 71263150000,
+    "Title": ".NET Design Review: GitHub Quick Reviews",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/qlj29o0R1rs/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=aaFcBs6cFqg",
+    "Id": "aaFcBs6cFqg",
+    "StartDateTime": "2019-03-12T10:10:28.639-07:00",
+    "EndDateTime": "2019-03-12T12:20:04-07:00",
+    "Duration": 77753610000,
+    "Title": ".NET Design Review: Tensor",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/aaFcBs6cFqg/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=vHqgsQ23GRg",
+    "Id": "vHqgsQ23GRg",
+    "StartDateTime": "2019-03-19T10:03:00.909-07:00",
+    "EndDateTime": "2019-03-19T12:03:58-07:00",
+    "Duration": 72570910000,
+    "Title": ".NET Design Review: GitHub Quick Reviews",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/vHqgsQ23GRg/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=_CdV75tEsVk",
+    "Id": "_CdV75tEsVk",
+    "StartDateTime": "2019-03-22T10:07:09.445-07:00",
+    "EndDateTime": "2019-03-22T12:09:46-07:00",
+    "Duration": 73565550000,
+    "Title": ".NET Design Review: JSON Serialization",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/_CdV75tEsVk/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=I8jzQ2oMf_o",
+    "Id": "I8jzQ2oMf_o",
+    "StartDateTime": "2019-03-26T10:07:42.211-07:00",
+    "EndDateTime": "2019-03-26T11:04:37-07:00",
+    "Duration": 34147890000,
+    "Title": ".NET Design Review: JSON Serialization",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/I8jzQ2oMf_o/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=SNc-nABLZws",
+    "Id": "SNc-nABLZws",
+    "StartDateTime": "2019-03-26T11:08:12.558-07:00",
+    "EndDateTime": "2019-03-26T11:51:51-07:00",
+    "Duration": 26184420000,
+    "Title": ".NET Design Review: AssemblyLoadContext improvements",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/SNc-nABLZws/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=_Uq0qG3KAzg",
+    "Id": "_Uq0qG3KAzg",
+    "StartDateTime": "2019-03-28T10:09:59.066-07:00",
+    "EndDateTime": "2019-03-28T11:02:59-07:00",
+    "Duration": 31799340000,
+    "Title": ".NET Design Review: JSON",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/_Uq0qG3KAzg/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=x5vbM3zB0_I",
+    "Id": "x5vbM3zB0_I",
+    "StartDateTime": "2019-04-02T10:03:59.732-07:00",
+    "EndDateTime": "2019-04-02T12:02:26-07:00",
+    "Duration": 71062680000,
+    "Title": ".NET Design Review: GitHub Quick Reviews",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/x5vbM3zB0_I/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=BgF2UKtQjWA",
+    "Id": "BgF2UKtQjWA",
+    "StartDateTime": "2019-04-09T10:05:40.561-07:00",
+    "EndDateTime": "2019-04-09T11:31:50-07:00",
+    "Duration": 51694390000,
+    "Title": ".NET Design Review: GitHub Quick Reviews",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/BgF2UKtQjWA/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=M1Hc0qrL_Oo",
+    "Id": "M1Hc0qrL_Oo",
+    "StartDateTime": "2019-04-16T10:07:33.958-07:00",
+    "EndDateTime": "2019-04-16T11:01:23-07:00",
+    "Duration": 32290420000,
+    "Title": ".NET Design Review: GitHub Quick Reviews",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/M1Hc0qrL_Oo/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=B62rZh-BDPU",
+    "Id": "B62rZh-BDPU",
+    "StartDateTime": "2019-04-23T10:01:33.127-07:00",
+    "EndDateTime": "2019-04-23T10:58:54-07:00",
+    "Duration": 34408730000,
+    "Title": ".NET Design Review: GitHub Quick Reviews",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/B62rZh-BDPU/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=5heMq4U2ek8",
+    "Id": "5heMq4U2ek8",
+    "StartDateTime": "2019-04-23T11:11:00.351-07:00",
+    "EndDateTime": "2019-04-23T12:07:49-07:00",
+    "Duration": 34086490000,
+    "Title": ".NET Design Review: RESX",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/5heMq4U2ek8/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=byHU4Ube7fg",
+    "Id": "byHU4Ube7fg",
+    "StartDateTime": "2019-04-25T11:02:15.48-07:00",
+    "EndDateTime": "2019-04-25T12:00:29-07:00",
+    "Duration": 34935200000,
+    "Title": ".NET Design Review: JSON",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/byHU4Ube7fg/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=jQjHzmAomLE",
+    "Id": "jQjHzmAomLE",
+    "StartDateTime": "2019-04-30T10:01:28.906-07:00",
+    "EndDateTime": "2019-04-30T11:02:07-07:00",
+    "Duration": 36380940000,
+    "Title": ".NET Design Review: GitHub Quick Reviews",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/jQjHzmAomLE/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=cP2E0gSe8is",
+    "Id": "cP2E0gSe8is",
+    "StartDateTime": "2019-05-14T10:08:24.891-07:00",
+    "EndDateTime": "2019-05-14T11:11:06-07:00",
+    "Duration": 37611090000,
+    "Title": ".NET Design Review: System.Data",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/cP2E0gSe8is/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=zAhOxraBsi0",
+    "Id": "zAhOxraBsi0",
+    "StartDateTime": "2019-05-21T10:06:10.035-07:00",
+    "EndDateTime": "2019-05-21T11:34:27-07:00",
+    "Duration": 52969650000,
+    "Title": ".NET Design Review: Nullable Annotation Attributes",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/zAhOxraBsi0/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=O1LGUD8jL5M",
+    "Id": "O1LGUD8jL5M",
+    "StartDateTime": "2019-05-24T10:04:11.201-07:00",
+    "EndDateTime": "2019-05-24T12:01:33-07:00",
+    "Duration": 70417990000,
+    "Title": ".NET Design Review: Nullable Annotations",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/O1LGUD8jL5M/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=_VAq-ORjkqk",
+    "Id": "_VAq-ORjkqk",
+    "StartDateTime": "2019-05-28T09:57:26.748-07:00",
+    "EndDateTime": "2019-05-28T11:01:22-07:00",
+    "Duration": 38352520000,
+    "Title": ".NET Design Review: GitHub Quick Reviews",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/_VAq-ORjkqk/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=MevY_iX6_TQ",
+    "Id": "MevY_iX6_TQ",
+    "StartDateTime": "2019-05-28T11:04:52.063-07:00",
+    "EndDateTime": "2019-05-28T12:06:08-07:00",
+    "Duration": 36759370000,
+    "Title": ".NET Design Review: Nullable Annotations",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/MevY_iX6_TQ/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=EVUtzNK3tdA",
+    "Id": "EVUtzNK3tdA",
+    "StartDateTime": "2019-05-30T10:03:48.916-07:00",
+    "EndDateTime": "2019-05-30T11:02:39-07:00",
+    "Duration": 35300840000,
+    "Title": ".NET Design Review: JSON",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/EVUtzNK3tdA/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=nZraFvZgz_Y",
+    "Id": "nZraFvZgz_Y",
+    "StartDateTime": "2019-05-30T13:06:39.259-07:00",
+    "EndDateTime": "2019-05-30T15:41:52-07:00",
+    "Duration": 93127410000,
+    "Title": ".NET Design Review: Nullable Annotations",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/nZraFvZgz_Y/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=Oi442B_VQEQ",
+    "Id": "Oi442B_VQEQ",
+    "StartDateTime": "2019-06-04T10:04:43.026-07:00",
+    "EndDateTime": "2019-06-04T11:58:02-07:00",
+    "Duration": 67989740000,
+    "Title": ".NET Design Review: Nullable Annotations",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/Oi442B_VQEQ/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=CJLCnj82kSA",
+    "Id": "CJLCnj82kSA",
+    "StartDateTime": "2019-06-05T14:06:52.234-07:00",
+    "EndDateTime": "2019-06-05T15:55:05-07:00",
+    "Duration": 64927660000,
+    "Title": ".NET Design Review: Nullable Annotations",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/CJLCnj82kSA/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=ux-NsNHHHD4",
+    "Id": "ux-NsNHHHD4",
+    "StartDateTime": "2019-06-06T10:06:57.173-07:00",
+    "EndDateTime": "2019-06-06T11:59:41-07:00",
+    "Duration": 67638270000,
+    "Title": ".NET Design Review: Nullable Annotations",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/ux-NsNHHHD4/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=se235MK9PFY",
+    "Id": "se235MK9PFY",
+    "StartDateTime": "2019-06-10T15:07:53.916-07:00",
+    "EndDateTime": "2019-06-10T16:41:08-07:00",
+    "Duration": 55940840000,
+    "Title": ".NET Design Review: Nullable Annotations",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/se235MK9PFY/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=XWSjh7qkHkg",
+    "Id": "XWSjh7qkHkg",
+    "StartDateTime": "2019-06-11T10:04:33.285-07:00",
+    "EndDateTime": "2019-06-11T11:04:08-07:00",
+    "Duration": 35747150000,
+    "Title": ".NET Design Review: GitHub Quick Reviews",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/XWSjh7qkHkg/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=uUlqyQ8x6yk",
+    "Id": "uUlqyQ8x6yk",
+    "StartDateTime": "2019-06-11T11:10:52.861-07:00",
+    "EndDateTime": "2019-06-11T12:01:05-07:00",
+    "Duration": 30121390000,
+    "Title": ".NET Design Review: JSON",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/uUlqyQ8x6yk/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=Zi3XXc_iPUU",
+    "Id": "Zi3XXc_iPUU",
+    "StartDateTime": "2019-06-12T13:03:35.365-07:00",
+    "EndDateTime": "2019-06-12T15:02:52-07:00",
+    "Duration": 71566350000,
+    "Title": ".NET Design Review: JSON",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/Zi3XXc_iPUU/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=yOLk_VtdmL4",
+    "Id": "yOLk_VtdmL4",
+    "StartDateTime": "2019-06-13T11:38:05.346-07:00",
+    "EndDateTime": "2019-06-13T13:00:57-07:00",
+    "Duration": 49716540000,
+    "Title": ".NET Design Review: Nullable Annotations",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/yOLk_VtdmL4/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=c2Ea_g2Jaqo",
+    "Id": "c2Ea_g2Jaqo",
+    "StartDateTime": "2019-06-17T14:03:19.2-07:00",
+    "EndDateTime": "2019-06-17T15:16:05-07:00",
+    "Duration": 43658000000,
+    "Title": ".NET Design Review: Nullable Annotations",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/c2Ea_g2Jaqo/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=56yfsgHtJ1E",
+    "Id": "56yfsgHtJ1E",
+    "StartDateTime": "2019-06-18T10:03:01.494-07:00",
+    "EndDateTime": "2019-06-18T12:02:12-07:00",
+    "Duration": 71505060000,
+    "Title": ".NET Design Review: Nullable Reflection APIs \u002B JSON",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/56yfsgHtJ1E/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=t1MQePMqRmQ",
+    "Id": "t1MQePMqRmQ",
+    "StartDateTime": "2019-06-25T10:06:23.59-07:00",
+    "EndDateTime": "2019-06-25T13:15:08-07:00",
+    "Duration": 113244100000,
+    "Title": ".NET Design Review: Nullability Custom Attributes",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/t1MQePMqRmQ/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=1k-niYNMo4w",
+    "Id": "1k-niYNMo4w",
+    "StartDateTime": "2019-06-25T15:05:49.167-07:00",
+    "EndDateTime": "2019-06-25T16:56:19-07:00",
+    "Duration": 66298330000,
+    "Title": ".NET Design Review: JSON",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/1k-niYNMo4w/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=dt-MEB8ujgk",
+    "Id": "dt-MEB8ujgk",
+    "StartDateTime": "2019-06-26T11:08:30.335-07:00",
+    "EndDateTime": "2019-06-26T11:48:10-07:00",
+    "Duration": 23796650000,
+    "Title": ".NET Design Review: Nullability Custom Attributes",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/dt-MEB8ujgk/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=SdNdvSN_OHY",
+    "Id": "SdNdvSN_OHY",
+    "StartDateTime": "2019-07-02T10:10:18.945-07:00",
+    "EndDateTime": "2019-07-02T10:37:07-07:00",
+    "Duration": 16080550000,
+    "Title": ".NET Design Review: GitHub Quick Reviews",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/SdNdvSN_OHY/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=EERe5C9qty0",
+    "Id": "EERe5C9qty0",
+    "StartDateTime": "2019-07-09T10:08:18.332-07:00",
+    "EndDateTime": "2019-07-09T12:06:27-07:00",
+    "Duration": 70886680000,
+    "Title": ".NET Design Review: GitHub Quick Reviews",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/EERe5C9qty0/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=JdaQ2RP2tqM",
+    "Id": "JdaQ2RP2tqM",
+    "StartDateTime": "2019-07-16T10:03:28.805-07:00",
+    "EndDateTime": "2019-07-16T12:01:59-07:00",
+    "Duration": 71101950000,
+    "Title": ".NET Design Review: GitHub Quick Reviews",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/JdaQ2RP2tqM/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=BvWt4KumHD0",
+    "Id": "BvWt4KumHD0",
+    "StartDateTime": "2019-08-06T10:10:52.616-07:00",
+    "EndDateTime": "2019-08-06T12:00:37-07:00",
+    "Duration": 65843840000,
+    "Title": ".NET Design Review: WinForms Task Dialog",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/BvWt4KumHD0/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=dfzXrQCINHM",
+    "Id": "dfzXrQCINHM",
+    "StartDateTime": "2019-08-20T11:01:58.518-07:00",
+    "EndDateTime": "2019-08-20T12:18:34-07:00",
+    "Duration": 45954820000,
+    "Title": ".NET Design Review: GitHub Quick Reviews",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/dfzXrQCINHM/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=maDBdlZfCGA",
+    "Id": "maDBdlZfCGA",
+    "StartDateTime": "2019-08-27T11:00:30.756-07:00",
+    "EndDateTime": "2019-08-27T12:10:42-07:00",
+    "Duration": 42112440000,
+    "Title": ".NET Design Review: GitHub Quick Reviews",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/maDBdlZfCGA/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=Vf-Gj0h8Uws",
+    "Id": "Vf-Gj0h8Uws",
+    "StartDateTime": "2019-09-10T10:07:57.521-07:00",
+    "EndDateTime": "2019-09-10T11:56:39-07:00",
+    "Duration": 65214790000,
+    "Title": ".NET Design Review: GitHub Quick Reviews",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/Vf-Gj0h8Uws/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=6Kd92ScY3gM",
+    "Id": "6Kd92ScY3gM",
+    "StartDateTime": "2019-09-17T11:10:28.876-07:00",
+    "EndDateTime": "2019-09-17T12:13:38-07:00",
+    "Duration": 37891240000,
+    "Title": ".NET Design Review: GitHub Quick Reviews",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/6Kd92ScY3gM/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=8M5rFkINsus",
+    "Id": "8M5rFkINsus",
+    "StartDateTime": "2019-09-24T11:10:08.464-07:00",
+    "EndDateTime": "2019-09-24T12:10:33-07:00",
+    "Duration": 36245360000,
+    "Title": ".NET Design Review: GitHub Quick Reviews",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/8M5rFkINsus/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=b-Hz_CBobfU",
+    "Id": "b-Hz_CBobfU",
+    "StartDateTime": "2019-10-01T10:10:24.661-07:00",
+    "EndDateTime": "2019-10-01T12:05:42-07:00",
+    "Duration": 69173390000,
+    "Title": ".NET Design Review: GitHub Quick Reviews",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/b-Hz_CBobfU/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=FAaw4uaYvgY",
+    "Id": "FAaw4uaYvgY",
+    "StartDateTime": "2019-10-08T10:12:10.077-07:00",
+    "EndDateTime": "2019-10-08T12:14:16-07:00",
+    "Duration": 73259230000,
+    "Title": ".NET Design Review: DataFrame",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/FAaw4uaYvgY/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=7KTxd_41Lus",
+    "Id": "7KTxd_41Lus",
+    "StartDateTime": "2019-10-10T13:07:01.117-07:00",
+    "EndDateTime": "2019-10-10T14:16:41-07:00",
+    "Duration": 41798830000,
+    "Title": ".NET Design Review: .NET Core 3.1",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/7KTxd_41Lus/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=VQuFvX2k-HA",
+    "Id": "VQuFvX2k-HA",
+    "StartDateTime": "2019-10-22T10:13:04.646-07:00",
+    "EndDateTime": "2019-10-22T11:59:51-07:00",
+    "Duration": 64063540000,
+    "Title": ".NET Design Review: GitHub Quick Reviews",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/VQuFvX2k-HA/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=NuggwegnRf0",
+    "Id": "NuggwegnRf0",
+    "StartDateTime": "2019-10-29T10:04:29.91-07:00",
+    "EndDateTime": "2019-10-29T11:57:11-07:00",
+    "Duration": 67610900000,
+    "Title": ".NET Design Review: ARM Intrinsics",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/NuggwegnRf0/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=s1R5GRTVb48",
+    "Id": "s1R5GRTVb48",
+    "StartDateTime": "2019-11-05T10:04:15.554-08:00",
+    "EndDateTime": "2019-11-05T12:25:07-08:00",
+    "Duration": 84514460000,
+    "Title": ".NET Design Review: GitHub Quick Reviews",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/s1R5GRTVb48/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=6NLJ1csBw14",
+    "Id": "6NLJ1csBw14",
+    "StartDateTime": "2019-11-12T10:05:42.319-08:00",
+    "EndDateTime": "2019-11-12T12:00:36-08:00",
+    "Duration": 68936810000,
+    "Title": ".NET Design Review: GitHub Quick Reviews",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/6NLJ1csBw14/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=tH1GXn2DCz4",
+    "Id": "tH1GXn2DCz4",
+    "StartDateTime": "2019-11-19T10:05:35.658-08:00",
+    "EndDateTime": "2019-11-19T10:47:15-08:00",
+    "Duration": 24993420000,
+    "Title": ".NET Design Review: GitHub Quick Reviews",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/tH1GXn2DCz4/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=b509D73mmGc",
+    "Id": "b509D73mmGc",
+    "StartDateTime": "2019-11-26T10:06:54.661-08:00",
+    "EndDateTime": "2019-11-26T12:03:51-08:00",
+    "Duration": 70163390000,
+    "Title": ".NET Design Review: GitHub Quick Reviews",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/b509D73mmGc/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=H9zrbztep4M",
+    "Id": "H9zrbztep4M",
+    "StartDateTime": "2019-12-03T10:10:47.273-08:00",
+    "EndDateTime": "2019-12-03T12:20:27-08:00",
+    "Duration": 77797270000,
+    "Title": ".NET Design Review: JSON \u0026 object graphs",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/H9zrbztep4M/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=zTzY7iL34Hg",
+    "Id": "zTzY7iL34Hg",
+    "StartDateTime": "2019-12-10T10:05:25.574-08:00",
+    "EndDateTime": "2019-12-10T11:59:02-08:00",
+    "Duration": 68164260000,
+    "Title": ".NET Design Review: GitHub Quick Reviews",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/zTzY7iL34Hg/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=VRTCAkk7wKU",
+    "Id": "VRTCAkk7wKU",
+    "StartDateTime": "2019-12-17T10:05:54.825-08:00",
+    "EndDateTime": "2019-12-17T12:05:32-08:00",
+    "Duration": 71771750000,
+    "Title": ".NET Design Review: GitHub Quick Reviews",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/VRTCAkk7wKU/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=lSB-ACeetRo",
+    "Id": "lSB-ACeetRo",
+    "StartDateTime": "2020-01-07T10:04:00-08:00",
+    "EndDateTime": "2020-01-07T12:01:31-08:00",
+    "Duration": 70510000000,
+    "Title": ".NET Design Reviews: GitHub Quick Reviews",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/lSB-ACeetRo/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=dJLmN6u98Z4",
+    "Id": "dJLmN6u98Z4",
+    "StartDateTime": "2020-01-14T10:04:00-08:00",
+    "EndDateTime": "2020-01-14T11:57:44-08:00",
+    "Duration": 68240000000,
+    "Title": ".NET Design Reviews: GitHub Quick Reviews",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/dJLmN6u98Z4/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=1GWGyqn_YPE",
+    "Id": "1GWGyqn_YPE",
+    "StartDateTime": "2020-01-21T10:01:03.877-08:00",
+    "EndDateTime": "2020-01-21T12:07:51-08:00",
+    "Duration": 76071230000,
+    "Title": ".NET Design Review: System.CommandLine",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/1GWGyqn_YPE/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=keHv3W-2-Q4",
+    "Id": "keHv3W-2-Q4",
+    "StartDateTime": "2020-01-28T10:28:16.778-08:00",
+    "EndDateTime": "2020-01-28T11:07:32-08:00",
+    "Duration": 23552220000,
+    "Title": ".NET Design Review: Quick Reviews",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/keHv3W-2-Q4/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=nD5kZ2aXjdM",
+    "Id": "nD5kZ2aXjdM",
+    "StartDateTime": "2020-02-04T10:08:00.906-08:00",
+    "EndDateTime": "2020-02-04T12:01:03-08:00",
+    "Duration": 67820940000,
+    "Title": ".NET Design Review: Quick Reviews",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/nD5kZ2aXjdM/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=kGIsqCyWqa0",
+    "Id": "kGIsqCyWqa0",
+    "StartDateTime": "2020-02-11T10:11:53.104-08:00",
+    "EndDateTime": "2020-02-11T12:03:15-08:00",
+    "Duration": 66818960000,
+    "Title": ".NET Design Review: Quick Reviews",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/kGIsqCyWqa0/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=nN_N9djxX8I",
+    "Id": "nN_N9djxX8I",
+    "StartDateTime": "2020-02-18T10:28:56.433-08:00",
+    "EndDateTime": "2020-02-18T12:05:11-08:00",
+    "Duration": 57745670000,
+    "Title": ".NET Design Review: ARM Intrinsics",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/nN_N9djxX8I/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=DWt2Dh5L-C0",
+    "Id": "DWt2Dh5L-C0",
+    "StartDateTime": "2020-02-20T10:04:49.344-08:00",
+    "EndDateTime": "2020-02-20T12:00:07-08:00",
+    "Duration": 69176560000,
+    "Title": ".NET Design Review: Quick Reviews",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/DWt2Dh5L-C0/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=T23Et1Pq6Gg",
+    "Id": "T23Et1Pq6Gg",
+    "StartDateTime": "2020-02-25T10:10:51.726-08:00",
+    "EndDateTime": "2020-02-25T12:06:02-08:00",
+    "Duration": 69102740000,
+    "Title": ".NET Design Review: Sync HTTP Client",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/T23Et1Pq6Gg/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=3qXvVF9n0kQ",
+    "Id": "3qXvVF9n0kQ",
+    "StartDateTime": "2020-03-03T10:04:12.136-08:00",
+    "EndDateTime": "2020-03-03T12:30:12-08:00",
+    "Duration": 87598640000,
+    "Title": ".NET Design Review: ARM Intrinsics",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/3qXvVF9n0kQ/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=gwXkFHKPKok",
+    "Id": "gwXkFHKPKok",
+    "StartDateTime": "2020-03-05T14:06:28.999-08:00",
+    "EndDateTime": "2020-03-05T15:30:01-08:00",
+    "Duration": 50120010000,
+    "Title": ".NET Design Review: WinForms Review",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/gwXkFHKPKok/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=PtiTXxroJT4",
+    "Id": "PtiTXxroJT4",
+    "StartDateTime": "2020-03-10T09:57:44.728-07:00",
+    "EndDateTime": "2020-03-10T11:04:05-07:00",
+    "Duration": 39802720000,
+    "Title": ".NET Design Review: AsnReader/AsnWriter",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/PtiTXxroJT4/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=_AHbjIS8_0I",
+    "Id": "_AHbjIS8_0I",
+    "StartDateTime": "2020-03-13T09:01:57.207-07:00",
+    "EndDateTime": "2020-03-13T10:25:58-07:00",
+    "Duration": 50407930000,
+    "Title": ".NET Design Review: HttpClient JSON Extension Methods",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/_AHbjIS8_0I/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=gGjTgHAHAKA",
+    "Id": "gGjTgHAHAKA",
+    "StartDateTime": "2020-03-17T10:07:19.63-07:00",
+    "EndDateTime": "2020-03-17T12:07:34-07:00",
+    "Duration": 72143700000,
+    "Title": ".NET Design Review: ARM Intrinsics",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/gGjTgHAHAKA/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=IcE-wGQC_eM",
+    "Id": "IcE-wGQC_eM",
+    "StartDateTime": "2020-03-24T10:03:58.488-07:00",
+    "EndDateTime": "2020-03-24T12:34:33-07:00",
+    "Duration": 90345120000,
+    "Title": ".NET Design Review: GitHub Quick Reviews",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/IcE-wGQC_eM/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=-qetGrkYAjk",
+    "Id": "-qetGrkYAjk",
+    "StartDateTime": "2020-03-31T09:58:48.069-07:00",
+    "EndDateTime": "2020-03-31T12:11:52-07:00",
+    "Duration": 79839310000,
+    "Title": ".NET Design Review: AsnReader Part 2",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/-qetGrkYAjk/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=jQw5hiePju0",
+    "Id": "jQw5hiePju0",
+    "StartDateTime": "2020-04-01T11:06:53.986-07:00",
+    "EndDateTime": "2020-04-01T12:07:23-07:00",
+    "Duration": 36290140000,
+    "Title": ".NET Design Review: WasmHttpHandler",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/jQw5hiePju0/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=POdrqNOlY5g",
+    "Id": "POdrqNOlY5g",
+    "StartDateTime": "2020-04-07T10:04:11.783-07:00",
+    "EndDateTime": "2020-04-07T12:19:30-07:00",
+    "Duration": 81182170000,
+    "Title": ".NET Design Review: GitHub Quick Reviews",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/POdrqNOlY5g/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=a3xPdYi6jYU",
+    "Id": "a3xPdYi6jYU",
+    "StartDateTime": "2020-04-14T10:12:35.741-07:00",
+    "EndDateTime": "2020-04-14T11:46:24-07:00",
+    "Duration": 56282590000,
+    "Title": ".NET Design Review: System.Diagnostics.Activity",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/a3xPdYi6jYU/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=Ttscz2mBl-c",
+    "Id": "Ttscz2mBl-c",
+    "StartDateTime": "2020-04-16T10:06:06.298-07:00",
+    "EndDateTime": "2020-04-16T12:30:25-07:00",
+    "Duration": 86587020000,
+    "Title": ".NET Design Review: GitHub Quick Reviews",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/Ttscz2mBl-c/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=1GkjoDSR7dE",
+    "Id": "1GkjoDSR7dE",
+    "StartDateTime": "2020-04-23T10:00:16-07:00",
+    "EndDateTime": "2020-04-23T12:17:23-07:00",
+    "Duration": 82270000000,
+    "Title": ".NET Design Review: GitHub Quick Reviews (Apr 23)",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/1GkjoDSR7dE/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=YLCAVnz2p4s",
+    "Id": "YLCAVnz2p4s",
+    "StartDateTime": "2020-04-30T10:08:34-07:00",
+    "EndDateTime": "2020-04-30T11:42:28-07:00",
+    "Duration": 56340000000,
+    "Title": "GitHub Quick Reviews",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/YLCAVnz2p4s/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=aM-GV6eEM4w",
+    "Id": "aM-GV6eEM4w",
+    "StartDateTime": "2020-04-30T11:46:14-07:00",
+    "EndDateTime": "2020-04-30T12:06:26-07:00",
+    "Duration": 12120000000,
+    "Title": "GitHub Quick Reviews",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/aM-GV6eEM4w/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=6PZKuo_JPFE",
+    "Id": "6PZKuo_JPFE",
+    "StartDateTime": "2020-05-05T10:08:05-07:00",
+    "EndDateTime": "2020-05-05T12:06:51-07:00",
+    "Duration": 71260000000,
+    "Title": "ARM API Review: Part 1 of N",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/6PZKuo_JPFE/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=CmF8g030Hno",
+    "Id": "CmF8g030Hno",
+    "StartDateTime": "2020-05-07T10:11:03-07:00",
+    "EndDateTime": "2020-05-07T12:12:21-07:00",
+    "Duration": 72780000000,
+    "Title": ".NET Design Review: AsnReader/Writer update",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/CmF8g030Hno/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=HTG56rrlif4",
+    "Id": "HTG56rrlif4",
+    "StartDateTime": "2020-05-12T11:05:11-07:00",
+    "EndDateTime": "2020-05-12T12:21:36-07:00",
+    "Duration": 45850000000,
+    "Title": "GitHub Quick Reviews",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/HTG56rrlif4/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=a9WxNvINTmU",
+    "Id": "a9WxNvINTmU",
+    "StartDateTime": "2020-05-14T10:08:16-07:00",
+    "EndDateTime": "2020-05-14T12:25:02-07:00",
+    "Duration": 82060000000,
+    "Title": "System.Net.Connections",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/a9WxNvINTmU/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=4JGzVdL4mkI",
+    "Id": "4JGzVdL4mkI",
+    "StartDateTime": "2020-05-19T10:00:40-07:00",
+    "EndDateTime": "2020-05-19T12:02:11-07:00",
+    "Duration": 72910000000,
+    "Title": ".NET Design Review: ARM",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/4JGzVdL4mkI/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=C5W7f10eX3Q",
+    "Id": "C5W7f10eX3Q",
+    "StartDateTime": "2020-05-21T10:00:30-07:00",
+    "EndDateTime": "2020-05-21T12:07:18-07:00",
+    "Duration": 76080000000,
+    "Title": ".NET Design Review: Connection Abstractions",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/C5W7f10eX3Q/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=I7whBbUrMcc",
+    "Id": "I7whBbUrMcc",
+    "StartDateTime": "2020-05-26T10:02:41-07:00",
+    "EndDateTime": "2020-05-26T12:06:04-07:00",
+    "Duration": 74030000000,
+    "Title": ".NET Design Review",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/I7whBbUrMcc/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=jhibZCgzB9o",
+    "Id": "jhibZCgzB9o",
+    "StartDateTime": "2020-05-29T10:06:18-07:00",
+    "EndDateTime": "2020-05-29T12:05:54-07:00",
+    "Duration": 71760000000,
+    "Title": ".NET Design Review",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/jhibZCgzB9o/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=P1w3Tc7Oyqk",
+    "Id": "P1w3Tc7Oyqk",
+    "StartDateTime": "2020-06-02T09:55:54-07:00",
+    "EndDateTime": "2020-06-02T11:59:48-07:00",
+    "Duration": 74340000000,
+    "Title": ".NET Design Review",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/P1w3Tc7Oyqk/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=H3obznO9_uo",
+    "Id": "H3obznO9_uo",
+    "StartDateTime": "2020-06-04T10:02:08-07:00",
+    "EndDateTime": "2020-06-04T12:05:04-07:00",
+    "Duration": 73760000000,
+    "Title": ".NET Design Review",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/H3obznO9_uo/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=VE3T-ckgZuI",
+    "Id": "VE3T-ckgZuI",
+    "StartDateTime": "2020-06-05T10:14:06-07:00",
+    "EndDateTime": "2020-06-05T12:24:50-07:00",
+    "Duration": 78440000000,
+    "Title": "GitHub Quick Reviews",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/VE3T-ckgZuI/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=W_fBGxryww4",
+    "Id": "W_fBGxryww4",
+    "StartDateTime": "2020-06-09T10:06:23-07:00",
+    "EndDateTime": "2020-06-09T12:23:43-07:00",
+    "Duration": 82400000000,
+    "Title": "GitHub Quick Reviews",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/W_fBGxryww4/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=feu2vWa-ilA",
+    "Id": "feu2vWa-ilA",
+    "StartDateTime": "2020-06-11T10:05:28-07:00",
+    "EndDateTime": "2020-06-11T12:16:27-07:00",
+    "Duration": 78590000000,
+    "Title": "GitHub Quick Reviews",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/feu2vWa-ilA/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=4sksWrrgXJg",
+    "Id": "4sksWrrgXJg",
+    "StartDateTime": "2020-06-12T10:03:24-07:00",
+    "EndDateTime": "2020-06-12T12:08:33-07:00",
+    "Duration": 75090000000,
+    "Title": "GitHub Quick Reviews",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/4sksWrrgXJg/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=Ot8PTydQi2k",
+    "Id": "Ot8PTydQi2k",
+    "StartDateTime": "2020-06-16T10:05:29-07:00",
+    "EndDateTime": "2020-06-16T11:56:51-07:00",
+    "Duration": 66820000000,
+    "Title": "GitHub Quick Reviews",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/Ot8PTydQi2k/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=t-X09mGPvNM",
+    "Id": "t-X09mGPvNM",
+    "StartDateTime": "2020-06-18T10:04:46-07:00",
+    "EndDateTime": "2020-06-18T12:11:47-07:00",
+    "Duration": 76210000000,
+    "Title": "GitHub Quick Reviews",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/t-X09mGPvNM/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=vEUndbRMOjQ",
+    "Id": "vEUndbRMOjQ",
+    "StartDateTime": "2020-06-23T10:10:46-07:00",
+    "EndDateTime": "2020-06-23T12:02:53-07:00",
+    "Duration": 67270000000,
+    "Title": "GitHub Quick Reviews",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/vEUndbRMOjQ/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=rx_098IdZU0",
+    "Id": "rx_098IdZU0",
+    "StartDateTime": "2020-06-25T09:54:00-07:00",
+    "EndDateTime": "2020-06-25T12:02:22-07:00",
+    "Duration": 77020000000,
+    "Title": "GitHub Quick Reviews",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/rx_098IdZU0/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=R5G4scTRRNQ",
+    "Id": "R5G4scTRRNQ",
+    "StartDateTime": "2020-06-26T10:00:12-07:00",
+    "EndDateTime": "2020-06-26T11:55:24-07:00",
+    "Duration": 69120000000,
+    "Title": "GitHub Quick Reviews",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/R5G4scTRRNQ/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=5w9Cbgr1HJY",
+    "Id": "5w9Cbgr1HJY",
+    "StartDateTime": "2020-06-30T11:04:39-07:00",
+    "EndDateTime": "2020-06-30T12:16:26-07:00",
+    "Duration": 43070000000,
+    "Title": "GitHub Quick Reviews",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/5w9Cbgr1HJY/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=eDDX05uBtFc",
+    "Id": "eDDX05uBtFc",
+    "StartDateTime": "2020-07-02T10:04:18-07:00",
+    "EndDateTime": "2020-07-02T12:54:02-07:00",
+    "Duration": 101840000000,
+    "Title": "GitHub Quick Reviews",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/eDDX05uBtFc/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=7XhZsgJTywg",
+    "Id": "7XhZsgJTywg",
+    "StartDateTime": "2020-07-02T15:00:59-07:00",
+    "EndDateTime": "2020-07-02T15:40:56-07:00",
+    "Duration": 23970000000,
+    "Title": "GitHub Quick Reviews",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/7XhZsgJTywg/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=9sjP8x1L93w",
+    "Id": "9sjP8x1L93w",
+    "StartDateTime": "2020-07-07T10:05:29-07:00",
+    "EndDateTime": "2020-07-07T12:16:21-07:00",
+    "Duration": 78520000000,
+    "Title": "GitHub Quick Reviews",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/9sjP8x1L93w/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=Uu-vtMorrC0",
+    "Id": "Uu-vtMorrC0",
+    "StartDateTime": "2020-07-09T10:09:30-07:00",
+    "EndDateTime": "2020-07-09T12:17:58-07:00",
+    "Duration": 77080000000,
+    "Title": "GitHub Quick Reviews",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/Uu-vtMorrC0/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=PlhWVNciJm4",
+    "Id": "PlhWVNciJm4",
+    "StartDateTime": "2020-07-10T10:08:05-07:00",
+    "EndDateTime": "2020-07-10T11:59:53-07:00",
+    "Duration": 67080000000,
+    "Title": "GitHub Quick Reviews",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/PlhWVNciJm4/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=Cw-kYXQ7Sw8",
+    "Id": "Cw-kYXQ7Sw8",
+    "StartDateTime": "2020-07-14T10:10:21-07:00",
+    "EndDateTime": "2020-07-14T12:06:22-07:00",
+    "Duration": 69610000000,
+    "Title": "GitHub Quick Reviews",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/Cw-kYXQ7Sw8/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=7YpDyRMaDKE",
+    "Id": "7YpDyRMaDKE",
+    "StartDateTime": "2020-07-16T10:00:51-07:00",
+    "EndDateTime": "2020-07-16T12:11:04-07:00",
+    "Duration": 78130000000,
+    "Title": "GitHub Quick Reviews",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/7YpDyRMaDKE/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=n4Pq8e9OlpI",
+    "Id": "n4Pq8e9OlpI",
+    "StartDateTime": "2020-07-17T10:04:39-07:00",
+    "EndDateTime": "2020-07-17T12:08:04-07:00",
+    "Duration": 74050000000,
+    "Title": "GitHub Quick Reviews",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/n4Pq8e9OlpI/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=bGFsZSISlZ0",
+    "Id": "bGFsZSISlZ0",
+    "StartDateTime": "2020-07-21T10:03:13-07:00",
+    "EndDateTime": "2020-07-21T12:01:05-07:00",
+    "Duration": 70720000000,
+    "Title": "GitHub Quick Reviews",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/bGFsZSISlZ0/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=WW65sGkDINQ",
+    "Id": "WW65sGkDINQ",
+    "StartDateTime": "2020-07-23T10:07:23-07:00",
+    "EndDateTime": "2020-07-23T12:07:38-07:00",
+    "Duration": 72150000000,
+    "Title": "GitHub Quick Reviews",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/WW65sGkDINQ/mqdefault.jpg"
+  },
+  {
+    "Url": "https://www.youtube.com/watch?v=TofmrPLEeFI",
+    "Id": "TofmrPLEeFI",
+    "StartDateTime": "2020-07-24T10:05:54-07:00",
+    "EndDateTime": "2020-07-24T12:07:01-07:00",
+    "Duration": 72670000000,
+    "Title": "GitHub Quick Reviews",
+    "ThumbnailUrl": "https://i.ytimg.com/vi/TofmrPLEeFI/mqdefault.jpg"
+  }
+]

@@ -1,0 +1,112 @@
+﻿@page "/reviews"
+
+@if (_currentPage == null)
+{
+    <div class="text-center">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+}
+else
+{
+    <div class="form-group">
+        <input class="form-control" type="text" placeholder="Filter" @bind="Filter" @bind:event="oninput">
+    </div>
+
+    <div class="gh-issue-list">
+
+        @foreach (var item in _currentPage.Items)
+        {
+            <div class="gh-issue-cell">
+                <div>
+                    <a class="gh-issue-title" href="reviews/@item.Id">@item.Title</a>
+                    <div class="gh-details-cell">
+                        #@item.Id @item.Date.FormatRelative()
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+    <nav aria-label="Pagination">
+        <ul class="pagination justify-content-center">
+            @{
+                var url = NavigationManager.Uri;
+
+                var previousHref = GetUriForPage(_currentPage.PageIndex - 1);
+                var nextHref = GetUriForPage(_currentPage.PageIndex + 1);
+
+                var previousDisabledClass = _currentPage.PageIndex == 0
+                        ? "disabled"
+                        : "";
+
+                var nextDisabledClass = _currentPage.PageIndex >= _currentPage.PageCount
+                        ? "disabled"
+                        : "";
+
+                var pages = new List<int>();
+
+                if (_currentPage.PageIndex > 5)
+                {
+                    pages.Add(0);
+                    pages.Add(1);
+                    pages.Add(-1);
+                    pages.Add(_currentPage.PageIndex - 2);
+                    pages.Add(_currentPage.PageIndex - 1);
+                }
+                else
+                {
+                    for (var i = 0; i < _currentPage.PageIndex; i++)
+                    {
+                        pages.Add(i);
+                    }
+                }
+
+                pages.Add(_currentPage.PageIndex);
+
+                if (_currentPage.PageIndex < _currentPage.PageCount - 6)
+                {
+                    pages.Add(_currentPage.PageIndex + 1);
+                    pages.Add(_currentPage.PageIndex + 2);
+                    pages.Add(-1);
+                    pages.Add(_currentPage.PageCount - 2);
+                    pages.Add(_currentPage.PageCount - 1);
+                }
+                else
+                {
+                    for (var i = _currentPage.PageIndex + 1; i < _currentPage.PageCount; i++)
+                    {
+                        pages.Add(i);
+                    }
+                }
+            }
+
+            <li class="page-item @previousDisabledClass">
+                <a class="page-link" href="@previousHref" tabindex="-1">Previous</a>
+            </li>
+
+            @foreach (var pageIndex in pages)
+            {
+                if (pageIndex < 0)
+                {
+                    <li class="page-item">
+                        <a class="page-link disabled" href="#">...</a>
+                    </li>
+                }
+                else
+                {
+                    var pageHref = GetUriForPage(pageIndex);
+                    var activeClass = pageIndex == _currentPage.PageIndex ? "active" : "";
+                    <li class="page-item @activeClass">
+                        <a class="page-link" href="@pageHref">@(pageIndex + 1)</a>
+                    </li>
+                }
+            }
+
+            <li class="page-item">
+                <a class="page-link @nextDisabledClass" href="@nextHref">Next</a>
+            </li>
+        </ul>
+    </nav>
+}

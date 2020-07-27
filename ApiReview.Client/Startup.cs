@@ -41,6 +41,7 @@ namespace ApiReview.Client
             services.AddControllers();
             services.AddHostedService<IssueCacheWarmUp>();
             services.AddSingleton<IssueService>();
+            services.AddSingleton<ReviewService>();
             services.AddSingleton<BackendHttpClientFactory>();
             services.AddScoped<AuthenticatedBackendHttpClientFactory>();
             services.AddScoped<NotesService>();

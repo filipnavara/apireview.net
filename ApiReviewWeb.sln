@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiReview.Server", "ApiRevi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiReview.Shared", "ApiReview.Shared\ApiReview.Shared.csproj", "{5C340B17-7C39-41B0-9503-9A5E494478B2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepoIndexer", "RepoIndexer\RepoIndexer.csproj", "{F44783AA-8A75-49F3-81EA-811CF7E1AAB3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{5C340B17-7C39-41B0-9503-9A5E494478B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C340B17-7C39-41B0-9503-9A5E494478B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C340B17-7C39-41B0-9503-9A5E494478B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F44783AA-8A75-49F3-81EA-811CF7E1AAB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F44783AA-8A75-49F3-81EA-811CF7E1AAB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F44783AA-8A75-49F3-81EA-811CF7E1AAB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F44783AA-8A75-49F3-81EA-811CF7E1AAB3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

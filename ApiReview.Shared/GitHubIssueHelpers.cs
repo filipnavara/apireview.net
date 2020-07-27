@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Text.RegularExpressions;
 
-namespace ApiReview.Server.Services
+namespace ApiReview.Shared
 {
     public static class GitHubIssueHelpers
     {

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.Text.Json.Serialization;
 
 namespace ApiReview.Shared
 {
@@ -11,6 +12,7 @@ namespace ApiReview.Shared
 
         public int Id { get; set; }
 
+        [JsonIgnore]
         public string IdFull => $"{Owner}/{Repo}#{Id}";
 
         public string Title { get; set; }
@@ -19,6 +21,7 @@ namespace ApiReview.Shared
 
         public DateTimeOffset CreatedAt { get; set; }
 
+        [JsonIgnore]
         public string DetailText => $"{IdFull} {CreatedAt.FormatRelative()} by {Author}";
 
         public string Url { get; set; }
