@@ -14,27 +14,27 @@ namespace ApiReview.Server.Services
 {
     public interface IGitHubManager
     {
-        Task<IReadOnlyList<ApiReviewFeedback>> GetFeedbackAsync(DateTimeOffset start, DateTimeOffset end);
+        Task<IReadOnlyList<ApiReviewItem>> GetFeedbackAsync(DateTimeOffset start, DateTimeOffset end);
         Task<IReadOnlyList<ApiReviewIssue>> GetIssuesAsync();
     }
 
     public sealed class FakeGitHubManager : IGitHubManager
     {
         private readonly IReadOnlyList<ApiReviewIssue> _issues;
-        private readonly IReadOnlyList<ApiReviewFeedback> _feedback;
+        private readonly IReadOnlyList<ApiReviewItem> _feedback;
 
         public FakeGitHubManager()
         {
             _issues = JsonSerializer.Deserialize<IReadOnlyList<ApiReviewIssue>>(Resources.GitHubFakeIssues);
-            _feedback = JsonSerializer.Deserialize<IReadOnlyList<ApiReviewFeedback>>(Resources.GitHubFakeFeedback);
+            _feedback = JsonSerializer.Deserialize<IReadOnlyList<ApiReviewItem>>(Resources.GitHubFakeFeedback);
         }
 
-        public Task<IReadOnlyList<ApiReviewFeedback>> GetFeedbackAsync(DateTimeOffset start, DateTimeOffset end)
+        public Task<IReadOnlyList<ApiReviewItem>> GetFeedbackAsync(DateTimeOffset start, DateTimeOffset end)
         {
             var result = _feedback.Where(f => start <= f.FeedbackDateTime && f.FeedbackDateTime <= end)
                                   .ToArray();
 
-            return Task.FromResult<IReadOnlyList<ApiReviewFeedback>>(result);
+            return Task.FromResult<IReadOnlyList<ApiReviewItem>>(result);
         }
 
         public Task<IReadOnlyList<ApiReviewIssue>> GetIssuesAsync()
@@ -54,14 +54,14 @@ namespace ApiReview.Server.Services
             _clientFactory = clientFactory;
         }
 
-        public Task<IReadOnlyList<ApiReviewFeedback>> GetFeedbackAsync(DateTimeOffset start, DateTimeOffset end)
+        public Task<IReadOnlyList<ApiReviewItem>> GetFeedbackAsync(DateTimeOffset start, DateTimeOffset end)
         {
             var repoList = _configuration["RepoList"];
             var repos = OrgAndRepo.ParseList(repoList).ToArray();
             return GetFeedbackAsync(repos, start, end);
         }
 
-        private async Task<IReadOnlyList<ApiReviewFeedback>> GetFeedbackAsync(OrgAndRepo[] repos, DateTimeOffset start, DateTimeOffset end)
+        private async Task<IReadOnlyList<ApiReviewItem>> GetFeedbackAsync(OrgAndRepo[] repos, DateTimeOffset start, DateTimeOffset end)
         {
             static bool IsApiIssue(Issue issue)
             {
@@ -98,7 +98,7 @@ namespace ApiReview.Server.Services
             //       role, so using the app quota seems fine.
 
             var github = await _clientFactory.CreateForAppAsync();
-            var results = new List<ApiReviewFeedback>();
+            var results = new List<ApiReviewItem>();
 
             foreach (var (owner, repo) in repos)
             {
@@ -140,7 +140,7 @@ namespace ApiReview.Server.Services
 
                         var apiReviewIssue = CreateIssue(owner, repo, issue);
 
-                        var feedback = new ApiReviewFeedback
+                        var feedback = new ApiReviewItem
                         {
                             Decision = decision,
                             Issue = apiReviewIssue,
@@ -148,8 +148,7 @@ namespace ApiReview.Server.Services
                             FeedbackAuthor = feedbackAuthor,
                             FeedbackDateTime = feedbackDateTime,
                             FeedbackUrl = feedbackUrl,
-                            FeedbackMarkdown = feedbackMarkdown,
-                            VideoUrl = videoUrl
+                            FeedbackMarkdown = feedbackMarkdown
                         };
                         results.Add(feedback);
                     }
@@ -210,7 +209,7 @@ namespace ApiReview.Server.Services
 
         private sealed class ApiReviewOutcome
         {
-            public ApiReviewOutcome(ApiReviewDecision decision, string decisionMaker, DateTimeOffset decisionTime)
+            public ApiReviewOutcome(ApiReviewDecisionKind decision, string decisionMaker, DateTimeOffset decisionTime)
             {
                 Decision = decision;
                 DecisionMaker = decisionMaker;
@@ -233,11 +232,11 @@ namespace ApiReview.Server.Services
                             readyEvent = e;
                             break;
                         case "labeled" when string.Equals(e.Label.Name, ApiReviewConstants.ApiApproved, StringComparison.OrdinalIgnoreCase):
-                            current = new ApiReviewOutcome(ApiReviewDecision.Approved, e.Actor.Login, e.CreatedAt);
+                            current = new ApiReviewOutcome(ApiReviewDecisionKind.Approved, e.Actor.Login, e.CreatedAt);
                             readyEvent = null;
                             break;
                         case "labeled" when string.Equals(e.Label.Name, ApiReviewConstants.ApiNeedsWork, StringComparison.OrdinalIgnoreCase):
-                            current = new ApiReviewOutcome(ApiReviewDecision.NeedsWork, e.Actor.Login, e.CreatedAt);
+                            current = new ApiReviewOutcome(ApiReviewDecisionKind.NeedsWork, e.Actor.Login, e.CreatedAt);
                             readyEvent = null;
                             break;
                         case "reopened":
@@ -245,7 +244,7 @@ namespace ApiReview.Server.Services
                             break;
                         case "closed":
                             if (readyEvent != null)
-                                rejection = new ApiReviewOutcome(ApiReviewDecision.Rejected, e.Actor.Login, e.CreatedAt);
+                                rejection = new ApiReviewOutcome(ApiReviewDecisionKind.Rejected, e.Actor.Login, e.CreatedAt);
                             break;
                     }
                 }
@@ -263,7 +262,7 @@ namespace ApiReview.Server.Services
                 return current;
             }
 
-            public ApiReviewDecision Decision { get; }
+            public ApiReviewDecisionKind Decision { get; }
             public string DecisionMaker { get; }
             public DateTimeOffset DecisionTime { get; }
         }

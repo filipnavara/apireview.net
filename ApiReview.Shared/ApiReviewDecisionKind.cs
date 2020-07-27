@@ -1,6 +1,6 @@
 ﻿namespace ApiReview.Shared
 {
-    public enum ApiReviewDecision
+    public enum ApiReviewDecisionKind
     {
         Approved,
         NeedsWork,

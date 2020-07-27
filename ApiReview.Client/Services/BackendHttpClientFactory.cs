@@ -16,7 +16,6 @@ namespace ApiReview.Client.Services
     public class BackendHttpClientFactory
     {
         private readonly string _url;
-        private readonly AuthenticationStateProvider _provider;
 
         public BackendHttpClientFactory(IConfiguration configuration,
                                         IOptions<JsonOptions> jsonOptions)

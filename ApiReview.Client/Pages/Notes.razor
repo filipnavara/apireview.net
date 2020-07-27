@@ -75,23 +75,24 @@ else if (Summary != null && Summary.Items.Any())
     <div class="gh-issue-list">
         @foreach (var item in Summary.Items)
         {
+            var videoUrl = Summary.GetVideoUrl(item.TimeCode);
             <div class="gh-issue-cell">
-                <a class="gh-issue-title" href="@item.Feedback.Issue.Url">@item.Feedback.Issue.Title</a>
+                <a class="gh-issue-title" href="@item.Issue.Url">@item.Issue.Title</a>
                 <span>
-                    @foreach (var label in item.Feedback.Issue.Labels)
+                    @foreach (var label in item.Issue.Labels)
                     {
                         <span class="gh-label"
                               style="background: @("#" + label.BackgroundColor); color: @label.ForegroundColor">@label.Name</span>
                         }
                 </span>
                 <div class="gh-details-cell">
-                    <strong><a href="@item.Feedback.FeedbackUrl">@item.Feedback.Decision</a></strong>
-                    @if (item.VideoTimeCodeUrl != null)
+                    <strong><a href="@item.FeedbackUrl">@item.Decision</a></strong>
+                    @if (videoUrl != null)
                     {
                         <text>|</text>
-                        <strong><a href="@item.VideoTimeCodeUrl">Video</a></strong>
+                        <strong><a href="@videoUrl">Video</a></strong>
                     }
-                    @item.Feedback.Issue.DetailText
+                    @item.Issue.DetailText
                 </div>
             </div>
         }

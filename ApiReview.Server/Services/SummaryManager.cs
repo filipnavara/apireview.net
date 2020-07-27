@@ -36,19 +36,18 @@ namespace ApiReview.Server.Services
             return CreateSummary(video, items);
         }
 
-        private static ApiReviewSummary CreateSummary(ApiReviewVideo video, IReadOnlyList<ApiReviewFeedback> items)
+        private static ApiReviewSummary CreateSummary(ApiReviewVideo video, IReadOnlyList<ApiReviewItem> items)
         {
             if (items.Count == 0)
             {
                 return new ApiReviewSummary
                 {
                     Video = video,
-                    Items = Array.Empty<ApiReviewFeedbackWithVideo>()
+                    Items = Array.Empty<ApiReviewItem>()
                 };
             }
             else
             {
-                var result = new List<ApiReviewFeedbackWithVideo>();
                 var reviewStart = video == null
                                     ? items.OrderBy(i => i.FeedbackDateTime).Select(i => i.FeedbackDateTime).First()
                                     : video.StartDateTime;
@@ -81,24 +80,16 @@ namespace ApiReview.Server.Services
                         timeCode = (previous.FeedbackDateTime - video.StartDateTime).Add(TimeSpan.FromSeconds(10));
                         var videoDuration = video.EndDateTime - video.StartDateTime;
                         if (timeCode >= videoDuration)
-                            timeCode = result[i - 1].VideoTimeCode;
+                            timeCode = items[i - 1].TimeCode;
                     }
 
-
-                    var feedbackWithVideo = new ApiReviewFeedbackWithVideo
-                    {
-                        Feedback = current,
-                        Video = video,
-                        VideoTimeCode = timeCode
-                    };
-
-                    result.Add(feedbackWithVideo);
+                    current.TimeCode = timeCode;
                 }
 
                 return new ApiReviewSummary
                 {
                     Video = video,
-                    Items = result
+                    Items = items
                 };
             }
         }
