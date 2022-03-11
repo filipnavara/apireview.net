@@ -107,7 +107,8 @@ public sealed class GitHubManager : IGitHubManager
                         feedbackAuthor: feedbackAuthor,
                         feedbackDateTime: feedbackDateTime,
                         feedbackUrl: feedbackUrl,
-                        feedbackMarkdown: feedbackMarkdown
+                        feedbackMarkdown: feedbackMarkdown,
+                        apis: null
                     );
                     results.Add(feedback);
                 }

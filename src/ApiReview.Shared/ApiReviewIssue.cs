@@ -1,6 +1,4 @@
-﻿using System.Text.Json.Serialization;
-
-namespace ApiReviewDotNet.Data;
+﻿namespace ApiReviewDotNet.Data;
 
 public sealed class ApiReviewIssue : IComparable<ApiReviewIssue>
 {
@@ -9,40 +7,38 @@ public sealed class ApiReviewIssue : IComparable<ApiReviewIssue>
                           int id,
                           string title,
                           string author,
-                          IReadOnlyList<string>? assignees,
+                          IReadOnlyList<string> assignees,
                           string? markedReadyForReviewBy,
-                          IReadOnlyList<string>? areaOwners,
+                          IReadOnlyList<string> areaOwners,
                           DateTimeOffset createdAt,
                           string url,
-                          string? milestone,
-                          IReadOnlyList<ApiReviewLabel>? labels,
-                          IReadOnlyList<ApiReviewer>? reviewers)
+                          string milestone,
+                          IReadOnlyList<ApiReviewLabel> labels,
+                          IReadOnlyList<ApiReviewer> reviewers)
     {
         Owner = owner;
         Repo = repo;
         Id = id;
         Title = title;
         Author = author;
-        Assignees = assignees ?? Array.Empty<string>();
+        Assignees = assignees;
         MarkedReadyForReviewBy = markedReadyForReviewBy;
-        AreaOwners = areaOwners ?? Array.Empty<string>();
+        AreaOwners = areaOwners;
         CreatedAt = createdAt;
         Url = url;
         Milestone = milestone;
-        Labels = labels ?? Array.Empty<ApiReviewLabel>();
-        Reviewers = reviewers ?? Array.Empty<ApiReviewer>();
+        Labels = labels;
+        Reviewers = reviewers;
     }
 
     public string Owner { get; }
 
     public string Repo { get; }
 
-    [JsonIgnore]
     public string RepoFull => $"{Owner}/{Repo}";
 
     public int Id { get; }
 
-    [JsonIgnore]
     public string IdFull => $"{Owner}/{Repo}#{Id}";
 
     public string Title { get; }
@@ -57,16 +53,14 @@ public sealed class ApiReviewIssue : IComparable<ApiReviewIssue>
 
     public DateTimeOffset CreatedAt { get; }
 
-    [JsonIgnore]
     public string DetailText => $"{IdFull} {CreatedAt.FormatRelative()} by {Author}";
 
     public string Url { get; }
 
-    public string? Milestone { get; }
+    public string Milestone { get; }
 
     public IReadOnlyList<ApiReviewLabel> Labels { get; }
 
-    [JsonIgnore]
     public bool IsBlocking => Labels is not null && Labels.Any(l => string.Equals(l.Name, ApiReviewConstants.Blocking, StringComparison.OrdinalIgnoreCase));
 
     public IReadOnlyList<ApiReviewer> Reviewers { get; }
@@ -87,7 +81,7 @@ public sealed class ApiReviewIssue : IComparable<ApiReviewIssue>
         return CreatedAt.CompareTo(other.CreatedAt);
     }
 
-    private static int CompareMilestone(string? x, string? y)
+    private static int CompareMilestone(string x, string y)
     {
         // The desired sort order is:
         //
@@ -97,13 +91,18 @@ public sealed class ApiReviewIssue : IComparable<ApiReviewIssue>
         //
         // Why does no milestone go last? Because we don't to punish folks for triaging milestones.
 
-        if (string.IsNullOrEmpty(x) && string.IsNullOrEmpty(y))
+        static bool IsNone(string m)
+        {
+            return string.IsNullOrEmpty(m) || m == ApiReviewConstants.NoMilestone;
+        }
+
+        if (IsNone(x) && IsNone(y))
             return 0;
 
-        if (string.IsNullOrEmpty(x))
+        if (IsNone(x))
             return 1;
 
-        if (string.IsNullOrEmpty(y))
+        if (IsNone(y))
             return -1;
 
         var xIsVersion = Version.TryParse(x, out var xVersion);

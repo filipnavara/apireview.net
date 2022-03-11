@@ -8,8 +8,7 @@ public sealed class ApiReviewItem
                          string? feedbackId,
                          string? feedbackAuthor,
                          string feedbackUrl,
-                         string? feedbackMarkdown,
-                         IEnumerable<string>? apis)
+                         string? feedbackMarkdown)
     {
         Decision = decision;
         Issue = issue;
@@ -18,7 +17,6 @@ public sealed class ApiReviewItem
         FeedbackAuthor = feedbackAuthor;
         FeedbackUrl = feedbackUrl;
         FeedbackMarkdown = feedbackMarkdown;
-        Apis = apis?.ToArray() ?? Array.Empty<string>();
     }
 
     public ApiReviewDecision Decision { get; }
@@ -29,5 +27,4 @@ public sealed class ApiReviewItem
     public string FeedbackUrl { get; }
     public string? FeedbackMarkdown { get; }
     public TimeSpan TimeCode { get; set; }
-    public IReadOnlyList<string> Apis { get; }
 }
